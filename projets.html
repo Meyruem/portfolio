@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projets - Portfolio Mohammed</title>
+  <link rel="stylesheet" href="css.css">
+  <style>
+    .sae-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .sae-text {
+      flex: 1;
+    }
+
+    .sae-image {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+
+    .sae-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #005fa3;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .sae-link:hover {
+      background-color: #ffd700;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo-title">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo" class="logo">
+      </a>
+      <h1>Mohammed Beqqal Azirar</h1>
+    </div>
+    <ul>
+      <li><a href="presentation.html">Présentation</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="interview.html">Interview</a></li>
+      <li><a href="objectifs.html">Objectifs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Mes projets</h2>
+
+  <div class="project-box">
+    <p>
+      Au fil de mes deux premiers semestres en BUT Informatique, j’ai eu l’opportunité de travailler sur de nombreuses SAÉ 
+      (Situations d’Apprentissage et d’Évaluation) qui m’ont permis de développer des compétences solides et variées. 
+      J’ai acquis des bases solides en développement web avec HTML/CSS, en programmation procédurale et orientée objet (Python, Java), 
+      ainsi qu’en modélisation et exploitation de bases de données. J’ai aussi appris à configurer un environnement serveur (LAMP) 
+      et à analyser des données avec des outils de visualisation comme pandas et matplotlib. Ces projets m’ont également formé à la conduite d’entretiens, 
+      à la rédaction de synthèses, à la gestion de projet en groupe, et à la recherche d’alternance. Grâce à ces expériences, 
+      j’ai non seulement progressé techniquement, mais aussi humainement, en apprenant à collaborer efficacement, 
+      structurer mes idées et m’adapter à des contextes professionnels concrets.
+    </p>
+  </div>
+
+  <!-- SAE 101 -->
+  <div class="sae-item">
+    <div class="sae-text">
+      <h4>SAE 1.01 — Analyse de communautés dans un réseau</h4>
+      <p>
+      Cette SAE réalisée en binôme portait sur l’étude des communautés dans un réseau social. L’objectif était
+      de modéliser des interactions entre utilisateurs via un tableau de chaînes de caractères. Nous avons développé
+      plusieurs fonctions pour analyser les relations
+      </p>
+      <a href="SAE/SAE101.ipynb" target="_blank" class="sae-link">📄 Voir le livrable (IPYNB)</a>
+    </div>
+    <img src="images/sae101.png" alt="SAE 101" class="sae-image">
+  </div>
+
+  <!-- SAE 102 -->
+  <div class="sae-item">
+    <div class="sae-text">
+      <h4>SAE 1.02 — Implémentation d’un besoin simple</h4>
+      <p>
+        Développement d’une application en Python simulant un réseau social à l’aide de graphes. Mise en pratique des structures de données.
+      </p>
+    </div>
+    <img src="images/sae102.png" alt="SAE 102" class="sae-image">
+  </div>
+
+  <!-- SAE 103 -->
+  <div class="sae-item">
+    <div class="sae-text">
+      <h4>SAE 1.03 — Installation d’un poste de développement</h4>
+      <p>
+        Mise en place d’un environnement complet avec VirtualBox, Linux, Apache, PHP, MySQL. Apprentissage des outils de développement.
+      </p>
+      <a href="SAE/SAE103.pdf" target="_blank" class="sae-link">📄 Voir le livrable (PDF)</a>
+    </div>
+    <img src="images/sae103.png" alt="SAE 103" class="sae-image">
+  </div>
+
+  <!-- SAE 104 -->
+  <div class="sae-item">
+    <div class="sae-text">
+      <h4>SAE 1.04 — Exploitation de base de données</h4>
+      <p>
+        Utilisation de PostgreSQL, modélisation MCD/MLD, requêtes SQL. Compréhension de la logique des bases de données relationnelles.
+      </p>
+    </div>
+    <img src="images/sae104.png" alt="SAE 104" class="sae-image">
+  </div>
+
+  <!-- SAE 105 -->
+  <div class="sae-item">
+    <div class="sae-text">
+      <h4>SAE 1.05 — Recueil de besoins</h4>
+      <p>
+        Conception d’un questionnaire pour améliorer les espaces étudiants à l’IUT. Enquête, entretiens, analyse de réponses et synthèse collective.
+      </p>
+      <a href="SAE/SAE105.pdf" target="_blank" class="sae-link">📄 Voir le livrable (PDF)</a>
+    </div>
+    <img src="images/sae105.png" alt="SAE 105" class="sae-image">
+  </div>
+
+  <!-- SAE 201 -->
+  <div class="sae-item">
+    <div class="sae-text">
+      <h4>SAE 2.01 — Développement d'une application</h4>
+      <p>
+        Conception d'une application Java orientée objet avec interface graphique et base de données intégrée.
+      </p>
+      <a href="SAE/SAE201.pdf" target="_blank" class="sae-link">📄 Voir le livrable (PDF)</a>
+    </div>
+    <img src="images/sae201.png" alt="SAE 201" class="sae-image">
+  </div>
+
+  <!-- SAE 202 -->
+  <div class="sae-item">
+    <div class="sae-text">
+      <h4>SAE 2.02 — Comparaison d’algorithmes</h4>
+      <p>
+        Analyse comparative d’algorithmes de tri et de recherche. Étude de complexité et visualisation des performances.
+      </p>
+      <a href="SAE/SAE202.ipynb" download="_blank" class="sae-link">📄 Voir le notebook (IPYNB)</a>
+    </div>
+    <img src="images/sae202.png" alt="SAE 202" class="sae-image">
+  </div>
+
+  <!-- SAE 203 -->
+  <div class="sae-item">
+    <div class="sae-text">
+      <h4>SAE 2.03 — Administration système</h4>
+      <p>
+        Configuration d’un serveur LAMP pour héberger des services web dynamiques sous Linux.
+      </p>
+      <a href="SAE/SAE203.pdf" target="_blank" class="sae-link">📄 Voir le livrable (PDF)</a>
+    </div>
+    <img src="images/sae203.png" alt="SAE 203" class="sae-image">
+  </div>
+
+  <!-- SAE 204 -->
+  <div class="sae-item">
+    <div class="sae-text">
+      <h4>SAE 2.04 — Visualisation de données</h4>
+      <p>
+        Conception de tableaux de bord interactifs à l’aide de Python, pandas, matplotlib, seaborn. Analyse visuelle de données CSV.
+      </p>
+      <a href="SAE/SAE204.pdf" target="_blank" class="sae-link">📄 Voir le livrable (PDF)</a>
+    </div>
+    <img src="images/sae204.png" alt="SAE 204" class="sae-image">
+  </div>
+
+  <!-- SAE 205 -->
+  <div class="sae-item">
+    <div class="sae-text">
+      <h4>SAE 2.05 — Recherche d’alternance</h4>
+      <p>
+        Projet collectif autour de la recherche d’alternance : rédaction CV, lettres, suivi des offres, création d’un tableau de bord et présentation orale.
+      </p>
+    </div>
+    <img src="images/sae205.png" alt="SAE 205" class="sae-image">
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <img src="images/sorbonne.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo">
+    <p>© 2025 Mohammed Beqqal Azirar</p>
+  </div>
+</footer>
+</body>
+</html>
