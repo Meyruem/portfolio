@@ -7,19 +7,21 @@
   <style>
     /* Ajouts CSS spécifiques pour la vidéo + image */
     .media-container {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
-    }
+  display: flex;
+  justify-content: center;  /* Centre horizontalement */
+  align-items: center;      /* Centre verticalement si tailles différentes */
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1000px;
+}
 
-    .veo-image, .veo-video {
-      width: 45%;
-      max-width: 400px;
-      border-radius: 8px;
-    }
+.veo-image, .veo-video {
+  width: 45%;
+  max-width: 400px;
+  border-radius: 8px;
+  display: block;
+}
   </style>
 </head>
 <body>
