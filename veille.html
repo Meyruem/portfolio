@@ -4,6 +4,23 @@
   <meta charset="UTF-8">
   <title>Veille Technologique - Portfolio Mohammed</title>
   <link rel="stylesheet" href="css.css">
+  <style>
+    /* Ajouts CSS spécifiques pour la vidéo + image */
+    .media-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .veo-image, .veo-video {
+      width: 45%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
 <header>
@@ -31,8 +48,17 @@
     <img src="images/logo.png" alt="Logo VEO 3" class="veo-logo">
   </div>
 
-<div class="veille-box">
-    <img src="images/VEO3.jpg" alt="Illustration VEO 3" class="veo-image">
+  <div class="veille-box">
+    <!-- Image + Vidéo côte à côte -->
+    <div class="media-container">
+      <img src="images/VEO3.jpg" alt="Illustration VEO 3" class="veo-image">
+      <video controls class="veo-video">
+        <source src="videos/veo3-demo.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+    </div>
+
+    <!-- Texte explicatif -->
     <div class="project-box">
       <p>
         Dans le cadre de ma veille, je me suis intéressé à VEO 3, la toute dernière IA développée par Google DeepMind.
