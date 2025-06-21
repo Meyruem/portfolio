@@ -5,26 +5,80 @@
   <title>Veille Technologique - Portfolio Mohammed</title>
   <link rel="stylesheet" href="css.css">
   <style>
-    /* Ajouts CSS spécifiques pour la vidéo + image */
+    /* CENTRAGE & ANIMATION */
     .media-container {
-  display: flex;
-  justify-content: center;  /* Centre horizontalement */
-  align-items: center;      /* Centre verticalement si tailles différentes */
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1000px;
-}
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-.veo-image, .veo-video {
-  width: 45%;
-  max-width: 400px;
-  border-radius: 8px;
-  display: block;
-}
+    .veo-image {
+      width: 45%;
+      max-width: 400px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .veo-image:hover {
+      transform: scale(1.03);
+    }
+
+    #video-wrapper {
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 1s ease, opacity 0.8s ease;
+    }
+
+    #video-wrapper.video-visible {
+      max-height: 600px;
+      opacity: 1;
+    }
+
+    .veo-video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+    }
+
+    /* AUTRES ÉLÉMENTS */
+    .veille-header {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .veo-logo {
+      width: 100px;
+      margin-top: 10px;
+    }
+
+    .project-box {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+      margin-top: 50px;
+    }
+
+    .sorbonne-logo {
+      width: 120px;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
   </style>
 </head>
 <body>
+
 <header>
   <nav>
     <div class="logo-title">
@@ -51,16 +105,18 @@
   </div>
 
   <div class="veille-box">
-    <!-- Image + Vidéo côte à côte -->
+    <!-- Image + Vidéo qui glisse après clic -->
     <div class="media-container">
-      <img src="images/VEO3.jpg" alt="Illustration VEO 3" class="veo-image">
-      <video controls class="veo-video">
-        <source src="videos/veo3-demo.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas la lecture vidéo.
-      </video>
+      <img src="images/VEO3.jpg" alt="Illustration VEO 3" class="veo-image" onclick="revealVideo()">
+      
+      <div id="video-wrapper">
+        <video controls class="veo-video">
+          <source src="videos/veo3-demo.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+      </div>
     </div>
 
-    <!-- Texte explicatif -->
     <div class="project-box">
       <p>
         Dans le cadre de ma veille, je me suis intéressé à VEO 3, la toute dernière IA développée par Google DeepMind.
@@ -83,6 +139,14 @@
     <p>© 2025 Mohammed Beqqal Azirar</p>
   </div>
 </footer>
+
+<!-- JavaScript -->
+<script>
+  function revealVideo() {
+    const wrapper = document.getElementById('video-wrapper');
+    wrapper.classList.toggle('video-visible');
+  }
+</script>
 
 </body>
 </html>
