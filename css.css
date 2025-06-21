@@ -104,7 +104,7 @@ main {
 
 .project-box {
   background-color: rgba(192, 192, 192, 0.1);
-  border-left: 6px solid #c0c0c0;
+  border-left: 6px solid #8b8b8b;
   padding: 20px;
   margin: 30px auto;
   width: 90%;
@@ -191,7 +191,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b388ff;
+  background: #1f1e1f;
 }
 
 * {
@@ -288,7 +288,7 @@ footer {
 }
 
 .sae-button:hover {
-  background-color: #ff3c38;
+  background-color: #c0c0c0;
   color: white;
   transform: scale(1.05);
 }
