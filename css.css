@@ -1,4 +1,3 @@
-/* === Base structure === */
 html, body {
   height: 100%;
   margin: 0;
@@ -6,17 +5,16 @@ html, body {
   display: flex;
   flex-direction: column;
   font-family: 'Segoe UI', Arial, sans-serif;
-  color: white;
+  color: #ffffff;
   scroll-behavior: smooth;
-  background: linear-gradient(-45deg, #001f3f, #005fa3, #e6b800, #001f3f);
+  background: linear-gradient(-45deg, #0a0a0a, #1a1a1a, #333333);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
   overflow-x: hidden;
 }
 
-/* === Header === */
 header {
-  background: linear-gradient(90deg, #001f3f, #005fa3, #ffd700);
+  background: linear-gradient(90deg, #0a0a0a, #1a1a1a, #333333);
   padding: 15px 30px;
   color: white;
   position: relative;
@@ -70,11 +68,10 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:focus,
 nav ul li a:active {
-  color: #ffd700;
-  text-shadow: 0 0 5px #fff;
+  color: #00ffff;
+  text-shadow: 0 0 6px #00ffff;
 }
 
-/* === Section principale === */
 main {
   flex: 1;
   padding: 50px 20px;
@@ -88,11 +85,11 @@ main {
 .typing {
   font-size: 1.2em;
   font-weight: bold;
-  color: #ffd700;
+  color: #00ffff;
   animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #ffd700;
+  border-right: 2px solid #00ffff;
 }
 
 @keyframes typing {
@@ -102,13 +99,12 @@ main {
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
-  50% { border-color: #ffd700; }
+  50% { border-color: #00ffff; }
 }
 
-/* === Encadré stylisé pour texte === */
 .project-box {
-  background-color: rgba(255, 204, 0, 0.15); /* jaune transparent */
-  border-left: 6px solid #ffcc00;
+  background-color: rgba(0, 255, 255, 0.1);
+  border-left: 6px solid #00ffff;
   padding: 20px;
   margin: 30px auto;
   width: 90%;
@@ -117,22 +113,20 @@ main {
   line-height: 1.6;
 }
 
-/* === Bloc pour la photo === */
 .photo-profil {
   width: 180px;
   height: 180px;
-  border: 2px dashed #ffd700;
+  border: 2px dashed #00ffff;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 30px auto;
   font-size: 1em;
-  color: #ffd700;
+  color: #00ffff;
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* === Icônes de contact === */
 .contact-icons {
   display: flex;
   justify-content: center;
@@ -145,19 +139,18 @@ main {
   width: 64px;
   height: 64px;
   object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(83%) sepia(94%) saturate(366%) hue-rotate(2deg) brightness(101%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(95%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(103%) contrast(102%);
   transition: transform 0.3s, filter 0.3s;
 }
 
 .contact-icons img:hover {
   transform: scale(1.1);
-  filter: brightness(1.1) sepia(1) hue-rotate(20deg);
+  filter: drop-shadow(0 0 6px #00ffff);
 }
 
-/* === Footer toujours en bas === */
 footer {
-  background: linear-gradient(90deg, #001f3f, #005fa3, #ffd700);
-  color: #000;
+  background: linear-gradient(90deg, #0a0a0a, #1a1a1a, #333333);
+  color: #ffffff;
   text-align: center;
   padding: 15px 0;
   font-weight: bold;
@@ -165,28 +158,10 @@ footer {
   z-index: 1;
 }
 
-/* === Animation de fond fluide === */
 @keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-footer {
-  background: linear-gradient(90deg, #001f3f, #005fa3, #ffd700);
-  color: #000;
-  padding: 15px 30px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: auto;
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .footer-content {
@@ -202,29 +177,26 @@ footer {
   object-fit: contain;
 }
 
-
-/* Scrollbar pour Chrome, Edge et Safari */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #001f3f; /* fond de la piste - bleu foncé */
+  background: #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e6b800; /* curseur - jaune doré */
+  background: #00ffff;
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffd700; /* curseur au survol - jaune vif */
+  background: #b388ff;
 }
 
-/* Pour Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #e6b800 #001f3f; /* curseur | fond */
+  scrollbar-color: #00ffff #0a0a0a;
 }
 
 .presentation-layout {
@@ -237,16 +209,6 @@ footer {
 }
 
 .presentation-layout .photo-profil {
-  width: 180px;
-  height: 180px;
-  border: 2px dashed #ffd700;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9em;
-  color: #ffd700;
-  background-color: rgba(255, 255, 255, 0.05);
   flex-shrink: 0;
 }
 
@@ -266,7 +228,7 @@ footer {
 .sae-image {
   width: 200px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0,255,255,0.3);
 }
 
 .veille-header {
@@ -294,7 +256,7 @@ footer {
   width: 300px;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
   max-width: 100%;
 }
 
@@ -311,32 +273,31 @@ footer {
   width: 300px;
   max-width: 100%;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
 }
 
 .sae-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    background-color: #005fa3;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #b388ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .sae-button:hover {
-  background-color: #ffcc00;
-  color: #000;
+  background-color: #ff3c38;
+  color: white;
   transform: scale(1.05);
 }
 
 .photo-interview img {
   width: 220px;
   height: auto;
-  border: 4px solid #ffd700; /* Contour jaune doré */
+  border: 4px solid #00ffff;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
   margin: 20px;
 }
-
