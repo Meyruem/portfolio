@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="css.css">
 </head>
 <body>
+  <div id="loading-screen">
+  <div class="loader"></div>
+  </div>
+
   
   <header>
     <nav>
@@ -13,7 +17,7 @@
         <a href="index.html">
           <img src="logo.png" alt="Logo" class="logo">
         </a>
-        <h1>Mohammed Beqqal Azirar</h1>
+        <h1 class="logo-nom">Mohammed Beqqal <span>AZIRAR</span></h1>
       </div>
       <ul>
         <li><a href="presentation.html">Présentation</a></li>
@@ -41,6 +45,14 @@
     <p>© 2025 Mohammed Beqqal Azirar</p>
   </div>
 </footer>
+
+<script>
+  window.addEventListener('load', () => {
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.style.opacity = '0';
+    setTimeout(() => loadingScreen.style.display = 'none', 500);
+  });
+</script>
 
 </body>
 </html>
