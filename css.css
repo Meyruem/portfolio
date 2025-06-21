@@ -326,3 +326,14 @@ footer {
   to { transform: rotate(360deg); }
 }
 
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.footer-content p {
+  margin-left: auto;
+  text-align: right;
+}
