@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <script>document.documentElement.setAttribute('data-theme','dark');try{localStorage.setItem('theme','dark');}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ 2.02 — Mohammed Beqqal Azirar</title>
+  <meta name="description" content="SAÉ 2.02 — fiche détaillée d'une SAÉ du BUT Informatique (IUT de Villetaneuse) par Mohammed Beqqal Azirar.">
+  <link rel="stylesheet" href="../css.css?v=3">
+  <link rel="icon" type="image/svg+xml" href="../logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wdth,wght@0,125,800;0,125,900;1,125,800;1,125,900&family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,0,600;9..144,0,700;9..144,1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <nav class="navpill">
+    <a class="brand-logo" href="../index.html" aria-label="Accueil — Mohammed Beqqal Azirar">
+      <img class="logo-mark" src="../logo.svg" alt="" aria-hidden="true" width="44" height="44">
+      <span class="brand">Mohammed Beqqal Azirar</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../presentation.html">Présentation</a></li>
+        <li><a href="../pourquoi-info.html">Pourquoi l'info ?</a></li>
+        <li><a href="../projets.html" class="active">Projets &amp; SAÉ</a></li>
+        <li><a href="../stage.html">Stage</a></li>
+        <li><a href="../bilan-competences.html">Bilan</a></li>
+        <li><a href="../objectifs.html">Objectifs</a></li>
+        <li><a href="../veille.html">Veille</a></li>
+    </ul>
+    <a class="nav-cta" href="../contact.html">Me contacter</a>
+  </nav>
+</header>
+
+<main>
+  <a href="../projets.html" class="detail-back">← Retour aux projets</a>
+
+  <div class="detail-hero">
+    <div>
+      <span class="sae-tag">SAÉ 2.02 · BUT1 · S2</span>
+      <h1 style="font-size:1.8em; margin:8px 0 8px;">Comparaison d'algorithmes</h1>
+      <p style="color:var(--text-muted); margin:0;">Étude comparative d'algorithmes de tri et de recherche avec mesures de performance</p>
+    </div>
+    <img src="../images/sae/sae202.png" alt="SAÉ 2.02">
+  </div>
+
+  <div class="detail-section">
+    <h3>Informations clés</h3>
+    <div class="detail-row">
+      <div class="key">Période</div>
+      <div class="val">Février — Avril 2025 · BUT1 S2</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Équipe</div>
+      <div class="val">Travail individuel</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Compétences BUT</div>
+      <div class="val"><span class="compet-pill">Optimiser</span> <span class="compet-pill">Réaliser un dvpt</span></div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Technologies</div>
+      <div class="val">Python · Jupyter Notebook · matplotlib · Analyse de complexité</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Livrable</div>
+      <div class="val"><a href="../SAE/SAE202.ipynb" target="_blank" class="btn-inline orange">Voir le notebook (.ipynb)</a></div>
+    </div>
+  </div>
+
+  <div class="detail-section">
+    <h3>Le projet en bref</h3>
+    <p>Étude comparative de plusieurs <strong>algorithmes de tri</strong> (tri à bulles,
+tri par insertion, tri rapide, tri fusion) et <strong>algorithmes de recherche</strong> (linéaire, dichotomique).
+L'objectif : <em>mesurer concrètement</em> leurs performances sur des jeux de données de tailles
+croissantes, et confronter les résultats à la théorie de la complexité (O(n), O(n log n), O(n²)).</p>
+  </div>
+
+  <div class="detail-section">
+    <h3>Comment ça s'est déroulé</h3>
+    <div class="timeline">
+      <div class="timeline-item"><h4>Implémentation des algorithmes</h4><p>Codage en Python des différents tris et recherches.</p></div><div class="timeline-item orange"><h4>Génération de jeux de tests</h4><p>Tableaux aléatoires, déjà triés, triés en ordre inverse — pour voir le pire et le meilleur cas.</p></div><div class="timeline-item"><h4>Mesures de performance</h4><p>Chronométrage de chaque algo sur chaque jeu de test, avec différentes tailles.</p></div><div class="timeline-item orange"><h4>Visualisation et analyse</h4><p>Graphiques matplotlib comparant les courbes. Confrontation théorie / pratique.</p></div>
+    </div>
+  </div>
+
+  <div class="detail-section card-orange">
+    <h3>Mon avis personnel</h3>
+    <div class="avis-quote">Cette SAÉ a fait le pont entre les cours théoriques d'algorithmie (toujours un peu abstraits)
+et la pratique. Voir le tri à bulles littéralement <em>écraser</em> tous les autres en termes de lenteur
+sur 100 000 éléments, c'est très parlant. Ça m'a appris à toujours me poser la question <em>« est-ce que
+cet algo va tenir le coup à grande échelle ? »</em> avant de coder — réflexe que j'ai eu pendant mon stage
+sur certaines requêtes Prisma.</div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-content">
+    <img src="../images/sorbonne-light.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo logo-light"><img src="../images/sorbonne-dark.png" alt="" aria-hidden="true" class="sorbonne-logo logo-dark">
+    <p>© 2025–2026 Mohammed Beqqal Azirar — Portfolio BUT Informatique S4</p>
+  </div>
+</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>

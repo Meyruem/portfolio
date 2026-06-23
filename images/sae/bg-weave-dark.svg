@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <!-- Tapis amazigh — rouge / vert / beige · tuile sans couture (réseau de losanges) -->
+  <g fill="none" stroke-linejoin="miter">
+    <!-- losange-cellule principal (touche le milieu des bords -> couture parfaite) -->
+    <path d="M45 0 L90 45 L45 90 L0 45 Z" stroke="#2f6e4f" stroke-width="5"/>
+    <path d="M45 9 L81 45 L45 81 L9 45 Z" stroke="#e6d6b8" stroke-width="3"/>
+    <path d="M45 19 L71 45 L45 71 L19 45 Z" stroke="#cf4334" stroke-width="3.5"/>
+    <!-- coeur plein -->
+    <path d="M45 31 L59 45 L45 59 L31 45 Z" fill="#cf4334" stroke="none"/>
+    <path d="M45 38 L52 45 L45 52 L38 45 Z" fill="#e6d6b8" stroke="none"/>
+    <circle cx="45" cy="45" r="2.6" fill="#2f6e4f"/>
+    <!-- crochets amazighs aux pointes du grand losange -->
+    <path d="M45 0 l5 5 M45 0 l-5 5" stroke="#e6d6b8" stroke-width="2.4"/>
+    <path d="M90 45 l-5 5 M90 45 l-5 -5" stroke="#e6d6b8" stroke-width="2.4"/>
+    <path d="M45 90 l5 -5 M45 90 l-5 -5" stroke="#e6d6b8" stroke-width="2.4"/>
+    <path d="M0 45 l5 5 M0 45 l5 -5" stroke="#e6d6b8" stroke-width="2.4"/>
+  </g>
+  <!-- noeuds aux coins (1/4 par coin -> losange complet une fois la tuile répétée) -->
+  <g fill="none">
+    <path d="M0 -9 L9 0 L0 9 L-9 0 Z" fill="#cf4334"/>
+    <path d="M90 -9 L99 0 L90 9 L81 0 Z" fill="#cf4334"/>
+    <path d="M0 81 L9 90 L0 99 L-9 90 Z" fill="#cf4334"/>
+    <path d="M90 81 L99 90 L90 99 L81 90 Z" fill="#cf4334"/>
+    <g stroke="#2f6e4f" stroke-width="2.2" fill="none">
+      <path d="M0 -5 L5 0 L0 5 L-5 0 Z"/>
+      <path d="M90 -5 L95 0 L90 5 L85 0 Z"/>
+      <path d="M0 85 L5 90 L0 95 L-5 90 Z"/>
+      <path d="M90 85 L95 90 L90 95 L85 90 Z"/>
+    </g>
+  </g>
+</svg>

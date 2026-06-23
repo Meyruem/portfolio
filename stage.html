@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <script>document.documentElement.setAttribute('data-theme','dark');try{localStorage.setItem('theme','dark');}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage BUT2 — Marchés BTP — Mohammed Beqqal Azirar</title>
+  <meta name="description" content="Stage BUT2 de 8 semaines chez Marchés BTP — architecture MVC, modules backend, 77 routes d'API documentées et bilan détaillé par compétence du BUT.">
+  <link rel="stylesheet" href="css.css?v=3">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wdth,wght@0,125,800;0,125,900;1,125,800;1,125,900&family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,0,600;9..144,0,700;9..144,1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <nav class="navpill">
+    <a class="brand-logo" href="index.html" aria-label="Accueil — Mohammed Beqqal Azirar">
+      <img class="logo-mark" src="logo.svg" alt="" aria-hidden="true" width="44" height="44">
+      <span class="brand">Mohammed Beqqal Azirar</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="pourquoi-info.html">Pourquoi l'info ?</a></li>
+        <li><a href="projets.html">Projets &amp; SAÉ</a></li>
+        <li><a href="stage.html" class="active">Stage</a></li>
+        <li><a href="bilan-competences.html">Bilan</a></li>
+        <li><a href="objectifs.html">Objectifs</a></li>
+        <li><a href="veille.html">Veille</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Me contacter</a>
+  </nav>
+</header>
+
+<main>
+  <h1 data-eyebrow="Expérience">Stage BUT2 — Marchés BTP</h1>
+  <p class="subtitle">8 semaines chez une startup BTP/numérique incubée à l'IMT Business School. Mon bilan personnel par compétence.</p>
+
+  <div class="detail-hero">
+    <div>
+      <span class="sae-tag">Stage de 8 semaines · BUT2</span>
+      <h2 style="font-size:1.7em; margin:8px 0 8px;">Reprise et amélioration d'une plateforme web de mise en relation BTP</h2>
+      <p style="color:var(--orange-light); font-style:italic;">26 janvier — 20 mars 2026 · Évry-Courcouronnes</p>
+      <p style="color:var(--text-muted);">
+        <strong>Marchés BTP</strong> — SAS fondée par Marko Marinkovic et Brahim, incubée à l'IMT Business School.
+        Plateforme reliant entreprises BTP, freelances et porteurs d'appels d'offres.
+      </p>
+    </div>
+    <img src="images/sae/stage.svg" alt="Marchés BTP">
+  </div>
+
+  <div class="detail-section">
+    <h3>Encadrement et contexte</h3>
+    <div class="detail-row">
+      <div class="key">Entreprise</div>
+      <div class="val">Marchés BTP (SAS) — Incubateur IMT Business School, 9 rue Charles Fourier, 91011 Évry-Courcouronnes</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Maître de stage</div>
+      <div class="val">Marko Marinkovic (fondateur)</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Encadrante technique</div>
+      <div class="val">Nadia Aissani (développeuse Full Stack)</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Enseignant référent</div>
+      <div class="val">Lucian Finta (IUT Villetaneuse)</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Stack technique</div>
+      <div class="val">React · Tailwind CSS · Node.js · Express · PostgreSQL · Prisma · JWT · Swagger / OpenAPI · Postman · Git</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Rapport complet</div>
+      <div class="val"><a href="SAE/RAPPORT_DE_STAGE_Mohammed-BEQQAL-AZIRAR_SATURNE.pdf" target="_blank" class="btn-inline orange">Télécharger le rapport (26 p.)</a></div>
+    </div>
+  </div>
+
+  <div class="detail-section">
+    <h3>Mes missions principales</h3>
+    <p>À mon arrivée, la plateforme existait mais souffrait de problèmes structurels : architecture
+    floue, fonctionnalités cassées, aucune documentation. Mes missions ont été :</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Restructuration en architecture MVC</h4>
+        <p>Analyse du code existant, proposition et défense de l'architecture <strong>Modèle-Vue-Contrôleur</strong>
+        face à une alternative micro-services. Mise en place du pattern (routes → contrôleurs → services → Prisma).</p>
+      </div>
+      <div class="timeline-item orange">
+        <h4>Développement de 4 nouveaux modules backend</h4>
+        <p>Création des modèles Prisma + routes/contrôleurs/services pour : <strong>Messages</strong>
+        (messagerie interne), <strong>Paiements</strong> (transactions), <strong>Avis</strong> (évaluations
+        croisées), <strong>Milestones</strong> (jalons de contrat avec paiements automatiques).</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Développement frontend React</h4>
+        <p>Création des services API Axios (paiementApi, avisApi, milestoneApi, favorisApi,
+        notificationApi). Développement complet du composant <strong>MesFavoris.jsx</strong> avec
+        gestion d'état via hooks (useState, useEffect).</p>
+      </div>
+      <div class="timeline-item orange">
+        <h4>Adaptation responsive</h4>
+        <p>Menu hamburger pour la sidebar mobile, tableaux convertis en cartes empilées sur petits
+        écrans, grilles adaptatives Tailwind (grid-cols-1 / sm:grid-cols-2 / lg:grid-cols-4).
+        Tests sur 4 tailles d'écran (320, 375, 768, 1024 px).</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Documentation Swagger de 77 routes API</h4>
+        <p>Apprentissage du format OpenAPI 3.0, puis documentation systématique de l'ensemble de
+        l'API : auth (11), freelances (10), entreprises (9), appels d'offres (8), contrats (11),
+        messages (7), notifications (7), géocodage (5), admin (10).</p>
+      </div>
+      <div class="timeline-item orange">
+        <h4>Tests fonctionnels et rapport de bugs</h4>
+        <p>Navigation systématique sur les 4 dashboards (admin, freelance, entreprise, appels
+        d'offres). Identification de 17 bugs avec captures, descriptions, comportements attendus
+        et fichiers à corriger.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Passation du projet</h4>
+        <p>Installation de l'environnement de dev sur le Mac des fondateurs (Homebrew, PostgreSQL,
+        Node, Prisma). Transfert via WeTransfer + clé USB exFAT après échec d'une clé NTFS sur macOS.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-section">
+    <h3>Bilan par compétence du BUT</h3>
+    <p>Référence : référentiel des compétences du BUT Informatique. Pour chaque compétence, je note
+    ce que j'ai concrètement mobilisé, et mon ressenti.</p>
+
+    <div class="card" style="margin-top:18px;">
+      <h4>Compétence 1 — Réaliser un développement d'application</h4>
+      <p><strong>Mobilisée à : très haut niveau.</strong> J'ai développé en fullstack pendant 8 semaines
+      réels : React + hooks côté frontend, Node.js + Express côté backend, le tout connecté à PostgreSQL
+      via Prisma. J'ai mené un projet de bout en bout, de la maquette à la mise en prod.</p>
+      <p><strong>Mon ressenti :</strong> énorme progression. J'ai eu pour la première fois la sensation
+      de « construire » un vrai logiciel, pas juste rendre un livrable scolaire.</p>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h4>Compétence 2 — Optimiser des applications</h4>
+      <p><strong>Mobilisée à : niveau moyen.</strong> Sur la refactorisation MVC, j'ai dû identifier
+      les goulets d'étranglement (code dupliqué, routes éparpillées entre deux backends, requêtes
+      Prisma non optimisées). J'ai aussi optimisé certaines requêtes en utilisant des <em>include</em>
+      Prisma pour éviter les requêtes N+1.</p>
+      <p><strong>Mon ressenti :</strong> je sais maintenant détecter du code mal structuré. Je dois
+      encore progresser sur l'optimisation des requêtes en base à grande échelle.</p>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h4>Compétence 3 — Administrer des systèmes informatiques communicants</h4>
+      <p><strong>Mobilisée à : niveau moyen.</strong> Installation de l'environnement complet (Node, PostgreSQL,
+      Prisma) sur deux OS différents (Windows pour moi, macOS pour les fondateurs). Configuration
+      d'un serveur Express avec CORS, middlewares de sécurité (Helmet, RateLimit), authentification JWT.
+      Documentation Swagger de l'API.</p>
+      <p><strong>Mon ressenti :</strong> les bases UNIX vues en SAÉ 1.03 et 2.03 m'ont énormément servi.
+      Sans elles, j'aurais été perdu sur le Mac avec Homebrew.</p>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h4>Compétence 4 — Gérer des données de l'information</h4>
+      <p><strong>Mobilisée à : haut niveau.</strong> J'ai créé 4 nouveaux modèles Prisma (Message,
+      Paiement, Avis, Milestone) en lien avec les 21 modèles existants. J'ai écrit des requêtes
+      avec relations complexes (jointures sur 3 tables), géré l'intégrité (un avis ne peut pas être
+      laissé sur un contrat non terminé, un utilisateur ne peut pas se noter lui-même, etc.).</p>
+      <p><strong>Mon ressenti :</strong> Prisma est une vraie révélation. Mes acquis en SQL et
+      modélisation (SAÉ 1.04) m'ont permis de comprendre rapidement la logique de l'ORM.</p>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h4>Compétence 5 — Conduire un projet</h4>
+      <p><strong>Mobilisée à : niveau moyen-élevé.</strong> J'ai planifié mes 8 semaines en autonomie,
+      proposé des choix d'architecture défendus à l'oral devant les fondateurs (non-techniciens),
+      géré les priorités au quotidien, et livré deux documents importants à la fin (Swagger +
+      rapport de bugs). J'ai aussi proposé un suivi structuré qui a remplacé un simple groupe WhatsApp.</p>
+      <p><strong>Mon ressenti :</strong> j'ai aimé l'aspect autonomie. Je sais maintenant qu'en
+      startup, on attend de toi des propositions, pas juste de l'exécution.</p>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h4>Compétence 6 — Collaborer au sein d'une équipe</h4>
+      <p><strong>Mobilisée à : haut niveau.</strong> Échanges quotidiens avec Nadia (technique),
+      points hebdo avec les fondateurs (vision produit), interactions avec Ayman, Abraham, Melissa,
+      Cemilia. Vulgarisation de concepts techniques (MVC, architecture) pour des fondateurs
+      non-développeurs. Git, présentiel + télétravail.</p>
+      <p><strong>Mon ressenti :</strong> j'ai compris que <em>savoir expliquer ce qu'on fait</em>
+      est aussi important que de le faire. C'est probablement la compétence soft la plus
+      transformatrice du stage.</p>
+    </div>
+  </div>
+
+  <div class="detail-section card-orange">
+    <h3>Synthèse personnelle du stage</h3>
+    <div class="avis-quote">
+      Ce stage a été <strong>la meilleure expérience formatrice de mon BUT</strong>. Pas parce que le
+      projet était parfait — il était au contraire désorganisé et plein de bugs — mais précisément
+      <em>parce qu'il l'était</em>. J'ai dû reprendre du code écrit par d'autres sans pouvoir les
+      contacter, comprendre des choix d'architecture qui n'étaient documentés nulle part, et oser
+      proposer des changements.
+      <br><br>
+      Ce que je retiens surtout : <strong>la documentation n'est pas un bonus, c'est un livrable</strong>.
+      J'ai vécu en tant que lecteur ce que les futurs développeurs auraient vécu sans ma Swagger.
+      Cette expérience me servira toute ma carrière.
+      <br><br>
+      Sur le plan humain, l'ambiance startup (proximité, autonomie, tutoiement, échanges directs)
+      m'a beaucoup plu. J'ai compris que c'était le type d'environnement où je voulais travailler en
+      alternance puis après mon diplôme.
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-content">
+    <img src="images/sorbonne-light.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo logo-light"><img src="images/sorbonne-dark.png" alt="" aria-hidden="true" class="sorbonne-logo logo-dark">
+    <p>© 2025–2026 Mohammed Beqqal Azirar — Portfolio BUT Informatique S4</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

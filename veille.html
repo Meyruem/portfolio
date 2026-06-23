@@ -1,152 +1,139 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
+  <script>document.documentElement.setAttribute('data-theme','dark');try{localStorage.setItem('theme','dark');}catch(e){}</script>
   <meta charset="UTF-8">
-  <title>Veille Technologique - Portfolio Mohammed</title>
-  <link rel="stylesheet" href="css.css">
-  <style>
-    /* CENTRAGE & ANIMATION */
-    .media-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .veo-image {
-      width: 45%;
-      max-width: 400px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s;
-    }
-
-    .veo-image:hover {
-      transform: scale(1.03);
-    }
-
-    #video-wrapper {
-      overflow: hidden;
-      max-height: 0;
-      opacity: 0;
-      transition: max-height 1s ease, opacity 0.8s ease;
-    }
-
-    #video-wrapper.video-visible {
-      max-height: 600px;
-      opacity: 1;
-    }
-
-    .veo-video {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 8px;
-    }
-
-    /* AUTRES ÉLÉMENTS */
-    .veille-header {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .veo-logo {
-      width: 100px;
-      margin-top: 10px;
-    }
-
-    .project-box {
-      padding: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: justify;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f5f5f5;
-      margin-top: 50px;
-    }
-
-    .sorbonne-logo {
-      width: 120px;
-      display: block;
-      margin: 0 auto 10px auto;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille technologique — Mohammed Beqqal Azirar</title>
+  <meta name="description" content="Veille technologique — VEO 3 de Google DeepMind : analyse personnelle des capacités de génération vidéo par intelligence artificielle.">
+  <link rel="stylesheet" href="css.css?v=3">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wdth,wght@0,125,800;0,125,900;1,125,800;1,125,900&family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,0,600;9..144,0,700;9..144,1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-  <nav>
-    <div class="logo-title">
-      <a href="index.html">
-        <img src="logo.png" alt="Logo" class="logo">
-      </a>
-      <h1>Mohammed Beqqal Azirar</h1>
-    </div>
-    <ul>
-      <li><a href="presentation.html">Présentation</a></li>
-      <li><a href="projets.html">Projets</a></li>
-      <li><a href="veille.html">Veille</a></li>
-      <li><a href="interview.html">Interview</a></li>
-      <li><a href="objectifs.html">Objectifs</a></li>
-      <li><a href="contact.html">Contact</a></li>
+  <header>
+  <nav class="navpill">
+    <a class="brand-logo" href="index.html" aria-label="Accueil — Mohammed Beqqal Azirar">
+      <img class="logo-mark" src="logo.svg" alt="" aria-hidden="true" width="44" height="44">
+      <span class="brand">Mohammed Beqqal Azirar</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="pourquoi-info.html">Pourquoi l'info ?</a></li>
+        <li><a href="projets.html">Projets &amp; SAÉ</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="bilan-competences.html">Bilan</a></li>
+        <li><a href="objectifs.html">Objectifs</a></li>
+        <li><a href="veille.html" class="active">Veille</a></li>
     </ul>
+    <a class="nav-cta" href="contact.html">Me contacter</a>
   </nav>
 </header>
 
 <main>
-  <div class="veille-header">
-    <h2>Veille technologique : VEO 3</h2>
-    <img src="images/logo.png" alt="Logo VEO 3" class="veo-logo">
+  <h1 data-eyebrow="Veille techno">Veille technologique</h1>
+  <p class="subtitle">Mon sujet de veille : <strong>VEO 3</strong>, le modèle d'IA générative vidéo de Google DeepMind.</p>
+
+  <div class="card card-blue">
+    <h3>Pourquoi ce sujet ?</h3>
+    <p>
+      L'<strong>IA générative</strong> est l'une des évolutions technologiques les plus marquantes
+      de la décennie. Après les images (DALL·E, Midjourney, Stable Diffusion) et le texte
+      (ChatGPT, Claude, Gemini), c'est désormais la <em>vidéo</em> qui est attaquée — et VEO 3,
+      développé par Google DeepMind, représente l'un des modèles les plus avancés actuellement.
+    </p>
+    <p>
+      Pour un futur professionnel de l'informatique, comprendre cette technologie est essentiel :
+      elle va transformer la création de contenu, le marketing, la formation, le cinéma — et
+      poser des questions inédites de droit, d'éthique et de société.
+    </p>
   </div>
 
-  <div class="veille-box">
-    <!-- Image + Vidéo qui glisse après clic -->
-    <div class="media-container">
-      <img src="images/VEO3.jpg" alt="Illustration VEO 3" class="veo-image" onclick="revealVideo()">
-      
+  <div class="card">
+    <h3>VEO 3 en démonstration</h3>
+    <p>
+      Cliquez sur l'image ci-dessous pour découvrir une démonstration vidéo des capacités de VEO 3 :
+    </p>
+    <div class="veille-media">
+      <button type="button" id="veo-btn" class="veo-btn" aria-expanded="false" aria-controls="video-wrapper" onclick="toggleVideo()">
+        <img id="veo-img" src="images/VEO3.jpg" alt="Aperçu de la démonstration VEO 3 — cliquer pour lire la vidéo" class="veo-image">
+      </button>
       <div id="video-wrapper">
-        <video controls class="veo-video">
+        <video id="veo-video" class="veo-video" controls>
           <source src="videos/veo3-demo.mp4" type="video/mp4">
           Votre navigateur ne supporte pas la lecture vidéo.
         </video>
       </div>
     </div>
+  </div>
 
-    <div class="project-box">
-      <p>
-        Dans le cadre de ma veille, je me suis intéressé à VEO 3, la toute dernière IA développée par Google DeepMind.
-        Cette technologie permet de générer des vidéos ultra-réalistes à partir de descriptions textuelles simples.
-        VEO 3 intègre des personnages parlant avec une synchronisation labiale précise, des mouvements fluides, des scènes cohérentes,
-        le tout dans un style cinématographique de qualité professionnelle.
-        Je suis cette technologie à travers le site officiel de DeepMind, des articles sur Medium,
-        des projets expérimentaux sur GitHub, ainsi que des forums spécialisés comme Reddit ou Discord.
-        En tant que passionné de création numérique, je trouve cette IA fascinante.
-        Elle ouvre de nouvelles perspectives dans le storytelling, la production visuelle rapide, la communication interactive,
-        et même dans l’éducation. VEO 3 symbolise ce que je trouve de plus passionnant en informatique : l’innovation au service de la créativité.
-      </p>
-    </div>
+  <div class="card card-orange">
+    <h3>Ce que VEO 3 apporte de nouveau</h3>
+    <p>
+      Comparé à ses prédécesseurs, VEO 3 introduit plusieurs avancées majeures :
+    </p>
+    <ul style="color:var(--text-secondary); padding-left:24px; line-height:2;">
+      <li><strong>Génération audio synchrone</strong> — VEO 3 ne génère plus seulement des images
+      animées : il produit aussi la bande-son (dialogues, bruits ambiants, musique) synchronisée
+      avec la vidéo. C'est une rupture majeure.</li>
+      <li><strong>Cohérence temporelle améliorée</strong> — les personnages et objets restent
+      cohérents tout au long de la vidéo, ce qui était le talon d'Achille des modèles précédents.</li>
+      <li><strong>Qualité photo-réaliste</strong> — la qualité visuelle est proche de vidéos
+      tournées au smartphone, voire mieux dans certains cas.</li>
+      <li><strong>Compréhension de prompts complexes</strong> — VEO 3 comprend des instructions
+      nuancées (style de caméra, lumière, ambiance).</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Mon analyse personnelle</h3>
+    <p>
+      VEO 3 m'impressionne techniquement, mais m'interroge aussi. <strong>Impressionne</strong> :
+      le saut qualitatif depuis les premiers modèles (Sora, Runway) est énorme, et la génération
+      audio synchrone est un vrai tournant. <strong>Interroge</strong> :
+    </p>
+    <ul style="color:var(--text-secondary); padding-left:24px; line-height:2;">
+      <li>Quelle traçabilité pour distinguer une vidéo générée d'une vidéo réelle ? (deepfakes)</li>
+      <li>Quel impact sur les métiers créatifs (acteurs, monteurs, réalisateurs) ?</li>
+      <li>Quelles régulations possibles à l'échelle européenne (AI Act) ?</li>
+      <li>Quel coût énergétique de génération à grande échelle ?</li>
+    </ul>
+    <p style="margin-top:16px;">
+      Ces questions ne sont pas annexes : elles vont façonner le métier d'informaticien dans les
+      années à venir. C'est pour ça que je suis cette veille de près — non pas pour devenir
+      spécialiste de l'IA générative, mais pour <em>comprendre l'écosystème dans lequel je vais
+      travailler</em>.
+    </p>
   </div>
 </main>
 
 <footer>
   <div class="footer-content">
-    <img src="images/sorbonne.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo">
-    <p>© 2025 Mohammed Beqqal Azirar</p>
+    <img src="images/sorbonne-light.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo logo-light"><img src="images/sorbonne-dark.png" alt="" aria-hidden="true" class="sorbonne-logo logo-dark">
+    <p>© 2025–2026 Mohammed Beqqal Azirar — Portfolio BUT Informatique S4</p>
   </div>
 </footer>
 
-<!-- JavaScript -->
 <script>
-  function revealVideo() {
+  function toggleVideo() {
     const wrapper = document.getElementById('video-wrapper');
-    wrapper.classList.toggle('video-visible');
+    const video = document.getElementById('veo-video');
+    const btn = document.getElementById('veo-btn');
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (wrapper.classList.contains('video-visible')) {
+      wrapper.classList.remove('video-visible');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+      video.pause();
+    } else {
+      wrapper.classList.add('video-visible');
+      if (btn) btn.setAttribute('aria-expanded', 'true');
+      wrapper.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'});
+      setTimeout(() => video.play().catch(()=>{}), reduce ? 0 : 700);
+    }
   }
 </script>
 
+<script src="app.js"></script>
 </body>
 </html>

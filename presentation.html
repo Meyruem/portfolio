@@ -1,70 +1,202 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
+  <script>document.documentElement.setAttribute('data-theme','dark');try{localStorage.setItem('theme','dark');}catch(e){}</script>
   <meta charset="UTF-8">
-  <title>Présentation - Portfolio Mohammed</title>
-  <link rel="stylesheet" href="css.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Présentation — Mohammed Beqqal Azirar</title>
+  <meta name="description" content="Présentation de Mohammed Beqqal Azirar — parcours, projet professionnel (data & développement fullstack), compétences et qualités illustrées par l'expérience.">
+  <link rel="stylesheet" href="css.css?v=3">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wdth,wght@0,125,800;0,125,900;1,125,800;1,125,900&family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,0,600;9..144,0,700;9..144,1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <nav>
-    <div class="logo-title">
-      <a href="index.html">
-        <img src="logo.png" alt="Logo accueil" class="logo">
-      </a>
-      <h1>Mohammed Beqqal Azirar</h1>
-    </div>
-    <ul>
-      <li><a href="presentation.html">Présentation</a></li>
-      <li><a href="projets.html">Projets</a></li>
-      <li><a href="veille.html">Veille</a></li>
-      <li><a href="interview.html">Interview</a></li>
-      <li><a href="objectifs.html">Objectifs</a></li>
-      <li><a href="contact.html">Contact</a></li>
+  <header>
+  <nav class="navpill">
+    <a class="brand-logo" href="index.html" aria-label="Accueil — Mohammed Beqqal Azirar">
+      <img class="logo-mark" src="logo.svg" alt="" aria-hidden="true" width="44" height="44">
+      <span class="brand">Mohammed Beqqal Azirar</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html" class="active">Présentation</a></li>
+        <li><a href="pourquoi-info.html">Pourquoi l'info ?</a></li>
+        <li><a href="projets.html">Projets &amp; SAÉ</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="bilan-competences.html">Bilan</a></li>
+        <li><a href="objectifs.html">Objectifs</a></li>
+        <li><a href="veille.html">Veille</a></li>
     </ul>
+    <a class="nav-cta" href="contact.html">Me contacter</a>
   </nav>
 </header>
 
 <main>
-  <h2>Présentation</h2>
-  <div class="presentation-layout">
-    
-    <div class="photo-interview">
-    <img src="images/photo.png" alt="Photo Interview" />
+  <h1 data-eyebrow="Profil">Présentation personnelle</h1>
+  <p class="subtitle">Qui je suis, ce que j'aime, et là où je veux aller.</p>
+
+  <div class="presentation-grid">
+
+    <aside class="profile-card">
+      <div class="photo-wrap">
+        <img src="images/photo.png" alt="Mohammed Beqqal Azirar" />
+      </div>
+      <h3>Mohammed Beqqal Azirar</h3>
+      <p class="role">BUT2 Informatique</p>
+      <div class="profile-tags">
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Python</span>
+        <span class="tag">Java</span>
+        <span class="tag orange">SQL</span>
+        <span class="tag orange">Linux</span>
+        <span class="tag">Prisma</span>
+        <span class="tag orange">Git</span>
+      </div>
+    </aside>
+
+    <div>
+      <!-- Trame officielle Citron -->
+      <div class="card">
+        <h3>En quelques mots</h3>
+
+        <div class="trame">
+          <div class="trame-item">
+            <strong>Je suis…</strong>
+            étudiant en deuxième année de BUT Informatique à l'IUT de Villetaneuse, Université Sorbonne Paris Nord.
+            Je viens de terminer un stage de huit semaines chez <em>Marchés BTP</em>, une startup du numérique
+            incubée à l'IMT Business School d'Évry-Courcouronnes, où j'ai contribué au développement d'une plateforme
+            web fullstack.
+          </div>
+
+          <div class="trame-item orange">
+            <strong>J'aime particulièrement…</strong>
+            comprendre <em>comment les choses fonctionnent en arrière-plan</em>. Ce qui me motive, ce n'est pas tant
+            d'écrire du code que de résoudre un problème concret : structurer une base de données mal pensée,
+            réorganiser un projet en désordre, ou rendre une interface vraiment utilisable. J'aime aussi le
+            travail en équipe quand chacun apporte sa pierre — j'ai compris pendant mon stage que la communication
+            compte autant que la technique.
+          </div>
+
+          <div class="trame-item">
+            <strong>Je souhaite devenir…</strong>
+            <em>Data Analyst</em> ou <em>développeur fullstack</em>, avec une appétence forte pour la data et
+            l'analyse. Je veux exercer un métier où la donnée structurée éclaire la décision — que ce soit dans une
+            entreprise tech, une startup ou un secteur à impact (santé, éducation, environnement).
+          </div>
+
+          <div class="trame-item orange">
+            <strong>Pour cela, j'ai commencé à…</strong>
+            consolider mes bases en SQL et modélisation (SAÉ 1.04), en visualisation de données (SAÉ 2.04 avec
+            pandas et matplotlib), et à pratiquer la stack web moderne (React, Node.js, Prisma, PostgreSQL)
+            pendant mon stage. Je cherche maintenant une <em>alternance pour ma BUT3</em> afin de confronter
+            mes acquis à un cadre professionnel sur la durée.
+          </div>
+        </div>
+      </div>
+
+      <!-- Mes compétences -->
+      <div class="card">
+        <h3>Mes compétences</h3>
+        <p>Voici les principales compétences que j'ai pu développer à l'IUT et renforcer pendant mon stage :</p>
+
+        <div class="compet-grid">
+          <div class="compet-item">
+            <div>
+              <div class="label">Développement frontend</div>
+              <div class="detail">React (hooks, composants), HTML/CSS, Tailwind, JavaScript, responsive design</div>
+            </div>
+          </div>
+          <div class="compet-item">
+            <div>
+              <div class="label">Développement backend</div>
+              <div class="detail">Node.js, Express, architecture MVC, API REST, authentification JWT</div>
+            </div>
+          </div>
+          <div class="compet-item">
+            <div>
+              <div class="label">Bases de données</div>
+              <div class="detail">PostgreSQL, MySQL, modélisation MCD/MLD, requêtes SQL, Prisma ORM</div>
+            </div>
+          </div>
+          <div class="compet-item">
+            <div>
+              <div class="label">Analyse de données</div>
+              <div class="detail">Python, pandas, matplotlib, seaborn, notebooks Jupyter</div>
+            </div>
+          </div>
+          <div class="compet-item">
+            <div>
+              <div class="label">POO &amp; Java</div>
+              <div class="detail">Java, JavaFX, pattern DAO, séparation des couches</div>
+            </div>
+          </div>
+          <div class="compet-item">
+            <div>
+              <div class="label">Administration système</div>
+              <div class="detail">Linux, VirtualBox, serveur LAMP (Apache, PHP, MySQL), gestion utilisateurs</div>
+            </div>
+          </div>
+          <div class="compet-item">
+            <div>
+              <div class="label">Documentation technique</div>
+              <div class="detail">Swagger / OpenAPI 3.0, rédaction de rapports, schémas d'architecture</div>
+            </div>
+          </div>
+          <div class="compet-item">
+            <div class="icon"></div>
+            <div>
+              <div class="label">Soft skills tech</div>
+              <div class="detail">Git, Postman, VS Code, lecture de code existant, debug</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mes qualités -->
+      <div class="card card-orange">
+        <h3>Mes qualités</h3>
+        <p>Trois qualités que je crois pouvoir illustrer concrètement par mes expériences :</p>
+
+        <ul class="quality-list">
+          <li>
+            <strong>Curiosité et autonomie</strong> — Pendant mon stage, mon encadrante Nadia ne me donnait jamais
+            la solution toute faite : elle m'orientait vers la documentation. Je me suis vite formé seul à Swagger
+            (que je ne connaissais pas) pour finir par documenter 77 routes d'API. Je préfère comprendre un outil
+            plutôt que le subir.
+          </li>
+          <li>
+            <strong>Capacité à structurer</strong> — À mon arrivée chez Marchés BTP, le code était désorganisé.
+            J'ai proposé une architecture MVC, je l'ai défendue devant les fondateurs (non-développeurs) en
+            vulgarisant, et je l'ai mise en place. C'est ce que je fais aussi dans mes projets perso : je
+            préfère prendre 30 minutes pour bien structurer plutôt que coder 3 heures dans le vide.
+          </li>
+          <li>
+            <strong>Persévérance et rigueur</strong> — Quand un bug résiste, je vais au bout (ex : un bug sur les
+            favoris en React qui m'a pris du temps mais que j'ai débuggé sans aide). J'aime aussi écrire des
+            choses propres : tests Postman pour chaque endpoint avant intégration, captures d'écran pour les
+            rapports de bugs, etc.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Conclusion : évolution BUT1 → BUT2 -->
+      <div class="card card-orange">
+        <h3 data-fr="En conclusion — mon évolution cette année" data-en="In conclusion — my growth this year">En conclusion — mon évolution cette année</h3>
+        <p data-fr="Entre le BUT 1 et le BUT 2, je suis passé d'un étudiant qui exécutait des exercices à quelqu'un qui pilote un projet de bout en bout. Le stage chez Marchés BTP a été le révélateur : j'y ai confirmé une appétence forte pour le développement fullstack et la donnée, et j'ai gagné en autonomie." data-en="Between BUT 1 and BUT 2, I went from a student running exercises to someone who drives a project end to end. The Marchés BTP internship was the catalyst: it confirmed a strong appetite for fullstack development and data, and I gained autonomy.">Entre le BUT 1 et le BUT 2, je suis passé d'un étudiant qui exécutait des exercices à quelqu'un qui pilote un projet de bout en bout. Le stage chez Marchés BTP a été le révélateur : j'y ai confirmé une appétence forte pour le développement fullstack et la donnée, et j'ai gagné en autonomie.</p>
+        <p data-fr="Mes points forts identifiés pour la suite : je comprends avant de coder, je documente systématiquement, et je sais vulgariser mes choix techniques. Mes bonnes pratiques (tests à chaque étape, Git propre, prise de notes structurée) sont désormais des réflexes que j'emporte vers le BUT 3 et l'alternance." data-en="My identified strengths going forward: I understand before coding, I document systematically, and I can explain my technical choices plainly. My good practices (testing at each step, clean Git, structured note-taking) are now reflexes I carry into BUT 3 and the work-study year.">Mes points forts identifiés pour la suite : je comprends avant de coder, je documente systématiquement, et je sais vulgariser mes choix techniques. Mes bonnes pratiques (tests à chaque étape, Git propre, prise de notes structurée) sont désormais des réflexes que j'emporte vers le BUT 3 et l'alternance.</p>
+      </div>
     </div>
-
-    <div class="project-box">
-      <p>
-        Étudiant en BUT1 Informatique à l’Université Sorbonne Paris Nord, je vous souhaite la bienvenue sur mon portfolio.
-        Ce site est bien plus qu’une simple vitrine : c’est le reflet de mon évolution personnelle et technique, un carnet de bord de mes projets,
-        de mes ambitions et des compétences que je développe chaque jour. À travers mes travaux, mes apprentissages et ma veille technologique,
-        je vous propose une immersion dans mon univers d'étudiant passionné par les nouvelles technologies.
-      </p>
-
-      <p>
-        Je m'appelle Mohammed Beqqal Azirar. J’ai 19 ans et je suis actuellement
-        en première année de BUT Informatique, à l’IUT de Villetaneuse Paris Sorbonne.
-        Depuis toujours, je suis fasciné par la logique des systèmes, la puissance de l’algorithmie et les possibilités infinies du numérique (tout ce qui est lié à la technologie).
-        C’est donc tout naturellement que j’ai choisi de m’orienter vers l’informatique.
-      </p>
-
-      <p>
-        Grâce à cette formation, j’ai pu découvrir un large éventail de domaines :
-        développement web, programmation orientée objet, modélisation de bases de données, virtualisation, gestion de projet...
-        Autant de compétences qui me donnent chaque jour davantage confiance en mes capacités.
-      </p>
-    </div>
-    
   </div>
 </main>
 
-
 <footer>
   <div class="footer-content">
-    <img src="images/sorbonne.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo">
-    <p>© 2025 Mohammed Beqqal Azirar</p>
+    <img src="images/sorbonne-light.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo logo-light"><img src="images/sorbonne-dark.png" alt="" aria-hidden="true" class="sorbonne-logo logo-dark">
+    <p>© 2025–2026 Mohammed Beqqal Azirar — Portfolio BUT Informatique S4</p>
   </div>
 </footer>
 
+<script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <script>document.documentElement.setAttribute('data-theme','dark');try{localStorage.setItem('theme','dark');}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mnémosyne — Mohammed Beqqal Azirar</title>
+  <meta name="description" content="Mnémosyne — plateforme web de suivi des cohortes étudiantes (API SCODOC, diagramme de Sankey). Projet phare du BUT2 (S3 + S4).">
+  <link rel="stylesheet" href="../css.css?v=3">
+  <link rel="icon" type="image/svg+xml" href="../logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wdth,wght@0,125,800;0,125,900;1,125,800;1,125,900&family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,0,600;9..144,0,700;9..144,1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <nav class="navpill">
+    <a class="brand-logo" href="../index.html" aria-label="Accueil — Mohammed Beqqal Azirar">
+      <img class="logo-mark" src="../logo.svg" alt="" aria-hidden="true" width="44" height="44">
+      <span class="brand">Mohammed Beqqal Azirar</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../presentation.html">Présentation</a></li>
+        <li><a href="../pourquoi-info.html">Pourquoi l'info ?</a></li>
+        <li><a href="../projets.html" class="active">Projets &amp; SAÉ</a></li>
+        <li><a href="../stage.html">Stage</a></li>
+        <li><a href="../bilan-competences.html">Bilan</a></li>
+        <li><a href="../objectifs.html">Objectifs</a></li>
+        <li><a href="../veille.html">Veille</a></li>
+    </ul>
+    <a class="nav-cta" href="../contact.html">Me contacter</a>
+  </nav>
+</header>
+
+<main>
+  <a href="../projets.html" class="detail-back">← Retour aux projets</a>
+
+  <div class="detail-hero">
+    <div>
+      <span class="sae-tag">SAÉ S3 + S4 · Projet phare</span>
+      <h1 style="font-size:1.9em; margin:8px 0 8px;">Mnémosyne — Suivi des cohortes étudiantes</h1>
+      <p style="color:var(--orange-light); font-style:italic; margin:0 0 8px;">« Garder la mémoire, éclairer les parcours »</p>
+      <p style="color:var(--text-muted); margin:0;">Plateforme web pour suivre les cohortes des 6 BUT de l'IUT de Villetaneuse, connectée à l'API SCODOC.</p>
+    </div>
+    <img src="../images/sae/mnemosyne.svg" alt="Mnémosyne">
+  </div>
+
+  <div class="detail-section">
+    <h3>Informations clés</h3>
+    <div class="detail-row">
+      <div class="key">Période</div>
+      <div class="val">Septembre 2025 — Juin 2026 · BUT2 S3 + S4</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Équipe</div>
+      <div class="val">Projet en équipe · Client : David Hébert (enseignant IUT)</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Compétences BUT</div>
+      <div class="val">
+        <span class="compet-pill">Réaliser un dvpt</span>
+        <span class="compet-pill">Optimiser</span>
+        <span class="compet-pill">Gérer des données</span>
+        <span class="compet-pill">Conduire un projet</span>
+        <span class="compet-pill">Collaborer</span>
+      </div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Stack</div>
+      <div class="val">Python · Flask · SQLAlchemy · SQLite · API SCODOC · D3.js (Sankey) · HTML/CSS/JS</div>
+    </div>
+    <div class="detail-row">
+      <div class="key">Liens</div>
+      <div class="val">
+        <a href="https://moodle.univ-spn.fr/mod/resource/view.php?id=263598" target="_blank" class="btn-inline">Cahier des charges (Moodle)</a>
+        <a href="https://scodoc.org/ScoDoc9API/" target="_blank" class="btn-inline orange">Documentation API SCODOC</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-section">
+    <h3>Le projet en bref</h3>
+    <p>
+      Mnémosyne est une plateforme web destinée à l'IUT de Villetaneuse pour visualiser le parcours
+      des cohortes d'étudiants à travers les <strong>6 BUT</strong> (CJ, GEA, GEII, INFO, RT, SD). L'application
+      se connecte à l'<strong>API SCODOC</strong> (gestion de la scolarité) pour récupérer les données réelles,
+      puis affiche pour une année et une formation donnée un <strong>diagramme de Sankey</strong> détaillé :
+      entrants Parcoursup, hors-Parcoursup, redoublants, passerelles, abandons (NAR), validations
+      (ADM/PASD/ADJ), etc.
+    </p>
+    <p>
+      L'application est structurée en deux parties :
+    </p>
+    <ul style="color:var(--text-secondary); padding-left:24px; line-height:1.9;">
+      <li><strong>Consultation</strong> — visualiser les cohortes, avec valeurs cliquables permettant
+      de naviguer d'année en année et de descendre dans le détail.</li>
+      <li><strong>Administration</strong> — partie protégée pour synchroniser les données depuis
+      SCODOC et définir les scénarii (un étudiant passant de BUT2 GEA FI à BUT3 FA — dans quelle case
+      le comptabiliser ?).</li>
+    </ul>
+  </div>
+
+  <div class="detail-section">
+    <h3>Comment ça s'est déroulé</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>S3 · Démarrage du projet (sept-déc 2025)</h4>
+        <p>Réunion de cadrage avec le client (David Hébert), analyse du cahier des charges,
+        découverte de l'API SCODOC, premières maquettes papier des deux interfaces.</p>
+      </div>
+      <div class="timeline-item orange">
+        <h4>S3 · Architecture et base de données</h4>
+        <p>Choix de Flask + SQLAlchemy. Modélisation de la base pour stocker les inscriptions et
+        les décisions de jury (ADM, PASD, RED, NAR, ADJ). Premières routes API internes.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>S3 · Diagramme Sankey</h4>
+        <p>Intégration d'une librairie Sankey en JavaScript. Premier rendu avec données factices,
+        puis branchement sur les données réelles. Plusieurs itérations sur le rendu visuel.</p>
+      </div>
+      <div class="timeline-item orange">
+        <h4>S3 · Soutenance et bilan</h4>
+        <p>Démo devant le client : version fonctionnelle mais incomplète. Beaucoup d'idées pour
+        le S4 (consultation cliquable, partie admin, scénarii).</p>
+      </div>
+      <div class="timeline-item">
+        <h4>S4 · Analyse de l'existant (jan-fév 2026)</h4>
+        <p>Comparaison de toutes les productions S3 (la nôtre + celles des autres équipes) selon
+        plusieurs critères : adéquation au besoin, qualité du code, technologies, facilité de
+        reprise. Document de synthèse partagé.</p>
+      </div>
+      <div class="timeline-item orange">
+        <h4>S4 · Reprise et amélioration</h4>
+        <p>Fork du projet retenu, amélioration de l'architecture, finalisation des fonctionnalités
+        manquantes, traitement des cas particuliers (passerelles, basculement FI/FA…).</p>
+      </div>
+      <div class="timeline-item">
+        <h4>S4 · Soutenance finale</h4>
+        <p>Démonstration d'un produit fini, utilisable par un vrai utilisateur (administrateur IUT).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-section card-orange">
+    <h3>Mon avis personnel</h3>
+    <div class="avis-quote">
+      Mnémosyne est sans hésitation <strong>le projet qui m'a le plus formé en BUT2</strong>. C'est la
+      première fois que je me confronte à un vrai cahier des charges client, avec des contraintes de
+      confidentialité (données SCODOC), une utilisateur final identifiable, et une échelle réelle (6
+      formations × plusieurs années).
+      <br><br>
+      Au S3, on a passé beaucoup de temps à comprendre le métier (qu'est-ce qu'un PASD ? quelle
+      différence entre ADM et ADJ ?). J'ai compris à ce moment qu'<strong>un développeur n'est utile
+      que s'il comprend le domaine de son client</strong>.
+      <br><br>
+      Au S4, l'exercice est différent : il faut <em>analyser le travail des autres</em>, en évaluer la
+      reprenabilité, et oser changer de base si besoin. C'est un exercice très professionnel, qui
+      ressemble à ce que j'ai vécu chez Marchés BTP en stage. Au final, ce projet m'a appris à
+      <strong>raisonner en termes de produit fini</strong>, pas juste de rendu d'évaluation.
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-content">
+    <img src="../images/sorbonne-light.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo logo-light"><img src="../images/sorbonne-dark.png" alt="" aria-hidden="true" class="sorbonne-logo logo-dark">
+    <p>© 2025–2026 Mohammed Beqqal Azirar — Portfolio BUT Informatique S4</p>
+  </div>
+</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>

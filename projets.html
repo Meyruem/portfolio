@@ -1,251 +1,177 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
+  <script>document.documentElement.setAttribute('data-theme','dark');try{localStorage.setItem('theme','dark');}catch(e){}</script>
   <meta charset="UTF-8">
-  <title>Projets - Portfolio Mohammed</title>
-  <link rel="stylesheet" href="css.css">
-  <style>
-    .sae-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin: 40px 0;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .sae-text {
-      flex: 1;
-      min-width: 300px;
-    }
-
-    .sae-media {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      min-width: 320px;
-    }
-
-    .sae-image {
-      width: 300px;
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
-    .sae-link {
-      display: inline-block;
-      padding: 8px 15px;
-     background-color: #1f1e1f; /* violet néon */
-     color: white;
-     text-decoration: none;
-     border-radius: 5px;
-     transition: background-color 0.3s, transform 0.3s, color 0.3s;
-    }
-
-  .sae-link:hover {
-    background-color: #c0c0c0; /* gris argenté */
-    color: #000000;
-    transform: scale(1.05);
-  }
-
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets &amp; SAÉ — Mohammed Beqqal Azirar</title>
+  <meta name="description" content="Projets & SAÉ de Mohammed Beqqal Azirar — Mnémosyne, bases de données, Java, data-visualisation, administration système… présentés comme une collection.">
+  <link rel="stylesheet" href="css.css?v=3">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wdth,wght@0,125,800;0,125,900;1,125,800;1,125,900&family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,0,600;9..144,0,700;9..144,1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <nav>
-    <div class="logo-title">
-      <a href="index.html">
-        <img src="logo.png" alt="Logo" class="logo">
-      </a>
-      <h1>Mohammed Beqqal Azirar</h1>
-    </div>
-    <ul>
-      <li><a href="presentation.html">Présentation</a></li>
-      <li><a href="projets.html">Projets</a></li>
-      <li><a href="veille.html">Veille</a></li>
-      <li><a href="interview.html">Interview</a></li>
-      <li><a href="objectifs.html">Objectifs</a></li>
-      <li><a href="contact.html">Contact</a></li>
+  <header>
+  <nav class="navpill">
+    <a class="brand-logo" href="index.html" aria-label="Accueil — Mohammed Beqqal Azirar">
+      <img class="logo-mark" src="logo.svg" alt="" aria-hidden="true" width="44" height="44">
+      <span class="brand">Mohammed Beqqal Azirar</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="pourquoi-info.html">Pourquoi l'info ?</a></li>
+        <li><a href="projets.html" class="active">Projets &amp; SAÉ</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="bilan-competences.html">Bilan</a></li>
+        <li><a href="objectifs.html">Objectifs</a></li>
+        <li><a href="veille.html">Veille</a></li>
     </ul>
+    <a class="nav-cta" href="contact.html">Me contacter</a>
   </nav>
 </header>
 
 <main>
-  <h2>Mes projets</h2>
+  <h1 data-eyebrow="Travaux">Projets &amp; SAÉ</h1>
+  <p class="subtitle">Mes situations d'apprentissage, présentées comme une collection. Cliquez sur un panneau pour entrer dans le détail.</p>
 
-  <div class="project-box">
-    <p>
-      Au fil de mes deux premiers semestres en BUT Informatique, j’ai eu l’opportunité de travailler sur de nombreuses SAÉ 
-      (Situations d’Apprentissage et d’Évaluation) qui m’ont permis de développer des compétences solides et variées. 
-      J’ai acquis des bases solides en développement web avec HTML/CSS, en programmation procédurale et orientée objet (Python, Java), 
-      ainsi qu’en modélisation et exploitation de bases de données. J’ai aussi appris à configurer un environnement serveur (LAMP) 
-      et à analyser des données avec des outils de visualisation comme pandas et matplotlib. Ces projets m’ont également formé à la conduite d’entretiens, 
-      à la rédaction de synthèses, à la gestion de projet en groupe, et à la recherche d’alternance. Grâce à ces expériences, 
-      j’ai non seulement progressé techniquement, mais aussi humainement, en apprenant à collaborer efficacement, 
-      structurer mes idées et m’adapter à des contextes professionnels concrets.
-    </p>
+  <div class="year-header" style="margin-top:36px;">
+    <span class="year-badge">BUT2</span>
+    <h3>Deuxième année</h3>
+    <span class="year-period">2025 — 2026</span>
+  </div>
+  <div class="showcase">
+  <a class="poster poster-text" href="projets/mnemosyne.html">
+    <div class="poster-head">
+      <div class="poster-kicker">Projet phare · S3 + S4</div>
+      <div class="poster-title">MNÉMOSYNE</div>
+      <div class="poster-sub">Suivi des cohortes · API SCODOC</div>
+    </div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
+  <a class="poster poster-text" href="stage.html">
+    <div class="poster-head">
+      <div class="poster-kicker">Stage BUT2 · 8 semaines</div>
+      <div class="poster-title">MARCHÉS BTP</div>
+      <div class="poster-sub">Plateforme web · Architecture MVC</div>
+    </div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
   </div>
 
-  <!-- SAEs -->
-  <div class="sae-item">
-    <div class="sae-text">
-      <h4>SAE 1.01 — Analyse de communautés dans un réseau</h4>
-      <p>
-        Étude des communautés dans un réseau social. Modélisation, analyse des relations avec Python.
-      </p>
-    </div>
-    <div class="sae-media">
-      <img src="images/sae101.png" alt="SAE 101" class="sae-image">
-      <a href="SAE/SAE101.ipynb" target="_blank" class="sae-link">📄 Voir le livrable (IPYNB)</a>
-    </div>
+  <div class="year-header" style="margin-top:56px;">
+    <span class="year-badge">BUT1</span>
+    <h3>Première année</h3>
+    <span class="year-period">2024 — 2025</span>
   </div>
 
-  <div class="sae-item">
-    <div class="sae-text">
-      <h4>SAE 1.02 — Implémentation d’un besoin simple</h4>
-      <p>
-        Développement en Python d’un réseau social basé sur des graphes. Structures de données appliquées.
-      </p>
+  <p class="semester-title">Semestre 1</p>
+  <div class="showcase">
+  <a class="poster" href="projets/sae101.html">
+    <div class="poster-head">
+      <div class="poster-kicker">SAÉ 1.01</div>
+      <div class="poster-title">RÉSEAUX</div>
+      <div class="poster-sub">Analyse de communautés</div>
     </div>
-    <div class="sae-media">
-      <img src="images/sae102.png" alt="SAE 102" class="sae-image">
+    <div class="poster-media"><img src="images/sae101.png" alt="RÉSEAUX" loading="lazy"></div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
+  <a class="poster" href="projets/sae102.html">
+    <div class="poster-head">
+      <div class="poster-kicker">SAÉ 1.02</div>
+      <div class="poster-title">BESOIN</div>
+      <div class="poster-sub">Implémentation d'un besoin simple</div>
     </div>
+    <div class="poster-media"><img src="images/sae102.png" alt="BESOIN" loading="lazy"></div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
+  <a class="poster" href="projets/sae103.html">
+    <div class="poster-head">
+      <div class="poster-kicker">SAÉ 1.03</div>
+      <div class="poster-title">POSTE·DEV</div>
+      <div class="poster-sub">Installation d'un environnement</div>
+    </div>
+    <div class="poster-media"><img src="images/sae103.png" alt="POSTE·DEV" loading="lazy"></div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
+  <a class="poster" href="projets/sae104.html">
+    <div class="poster-head">
+      <div class="poster-kicker">SAÉ 1.04</div>
+      <div class="poster-title">SQL·BDD</div>
+      <div class="poster-sub">Climate Disasters · PostgreSQL</div>
+    </div>
+    <div class="poster-media"><img src="images/sae104.png" alt="SQL·BDD" loading="lazy"></div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
+  <a class="poster" href="projets/sae105.html">
+    <div class="poster-head">
+      <div class="poster-kicker">SAÉ 1.05</div>
+      <div class="poster-title">BESOINS</div>
+      <div class="poster-sub">Recueil · entretiens utilisateurs</div>
+    </div>
+    <div class="poster-media"><img src="images/sae105.png" alt="BESOINS" loading="lazy"></div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
   </div>
 
-  <div class="sae-item">
-    <div class="sae-text">
-      <h4>SAE 1.03 — Installation d’un poste de développement</h4>
-      <p>
-        Mise en place d’un environnement VirtualBox Linux avec serveur LAMP (Apache, PHP, MySQL).
-      </p>
+  <p class="semester-title">Semestre 2</p>
+  <div class="showcase">
+  <a class="poster" href="projets/sae201.html">
+    <div class="poster-head">
+      <div class="poster-kicker">SAÉ 2.01</div>
+      <div class="poster-title">JAVA</div>
+      <div class="poster-sub">Développement d'une application</div>
     </div>
-    <div class="sae-media">
-      <img src="images/sae103.png" alt="SAE 103" class="sae-image">
-      <a href="SAE/SAE103.pdf" target="_blank" class="sae-link">📄 Voir le livrable (PDF)</a>
+    <div class="poster-media"><img src="images/sae201.png" alt="JAVA" loading="lazy"></div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
+  <a class="poster" href="projets/sae202.html">
+    <div class="poster-head">
+      <div class="poster-kicker">SAÉ 2.02</div>
+      <div class="poster-title">ALGORITHMES</div>
+      <div class="poster-sub">Comparaison & performance</div>
     </div>
-  </div>
-
-  <div class="sae-item">
-    <div class="sae-text">
-      <h4>SAE 1.04 — Exploitation de base de données</h4>
-      <p>
-        Dans le cadre de la SAE 1.04 intitulée Climate-Related Disasters Frequency, 
-        j’ai été amené à réaliser un projet complet autour de l’exploitation de bases de données en 
-        utilisant principalement le SGBD PostgreSQL. Cette expérience m’a permis de découvrir 
-        et de mettre en œuvre toutes les étapes fondamentales de la conception et de la manipulation 
-        d’une base de données relationnelle. J’ai commencé par analyser les données fournies afin
-         de mieux comprendre leur structure et les liens logiques entre les différentes entités, 
-         ce qui m’a ensuite conduit à produire une modélisation conceptuelle (MCD) claire, que j’ai 
-         transformée en modèle logique (MLD) puis en modèle physique. À travers des outils comme MySQL
-          Workbench, j’ai pu visualiser mes schémas et générer automatiquement les scripts SQL 
-          nécessaires à la création de la base. J’ai également rédigé manuellement un script SQL 
-          complet, ce qui m’a permis de mieux comprendre la syntaxe et les contraintes de création 
-          de tables, de clés primaires et étrangères, et d’indices. J’ai ensuite alimenté les tables 
-          avec des données pertinentes et conçu plusieurs requêtes SQL plus ou moins complexes pour 
-          extraire des informations significatives. Cela m’a aidé à renforcer ma maîtrise des jointures,
-          des regroupements, des tris et des filtres. Globalement, cette SAE m’a permis de consolider 
-          mes compétences en modélisation, en manipulation de données et en langage SQL, tout en me 
-          confrontant à une problématique concrète liée aux catastrophes naturelles et à leur 
-          fréquence selon les régions et les pays.
-      </p>
+    <div class="poster-media"><img src="images/sae202.png" alt="ALGORITHMES" loading="lazy"></div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
+  <a class="poster" href="projets/sae203.html">
+    <div class="poster-head">
+      <div class="poster-kicker">SAÉ 2.03</div>
+      <div class="poster-title">SYSTÈME</div>
+      <div class="poster-sub">Administration · LAMP Linux</div>
     </div>
-    <div class="sae-media">
-      <img src="images/sae104.png" alt="SAE 104" class="sae-image">
+    <div class="poster-media"><img src="images/sae203.png" alt="SYSTÈME" loading="lazy"></div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
+  <a class="poster" href="projets/sae204.html">
+    <div class="poster-head">
+      <div class="poster-kicker">SAÉ 2.04</div>
+      <div class="poster-title">DATA·VIZ</div>
+      <div class="poster-sub">Visualisation de données Python</div>
     </div>
-  </div>
-
-  <div class="sae-item">
-    <div class="sae-text">
-      <h4>SAE 1.05 — Recueil de besoins</h4>
-      <p>
-        Enquête auprès d'étudiants pour améliorer leur cadre de vie à l’IUT. Questionnaires, entretiens et synthèse.
-      </p>
+    <div class="poster-media"><img src="images/sae204.png" alt="DATA·VIZ" loading="lazy"></div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
+  <a class="poster" href="projets/sae205.html">
+    <div class="poster-head">
+      <div class="poster-kicker">SAÉ 2.05</div>
+      <div class="poster-title">ALTERNANCE</div>
+      <div class="poster-sub">Recherche & communication</div>
     </div>
-    <div class="sae-media">
-      <img src="images/sae105.png" alt="SAE 105" class="sae-image">
-      <a href="SAE/SAE105.pdf" target="_blank" class="sae-link">📄 Voir le livrable (PDF)</a>
-    </div>
-  </div>
-
-  <div class="sae-item">
-    <div class="sae-text">
-      <h4>SAE 2.01 — Développement d'une application</h4>
-      <p>
-        Application Java orientée objet avec interface graphique et base de données intégrée (DAO).
-      </p>
-    </div>
-    <div class="sae-media">
-      <img src="images/sae201.png" alt="SAE 201" class="sae-image">
-      <a href="SAE/SAE201.pdf" target="_blank" class="sae-link">📄 Voir le livrable (PDF)</a>
-    </div>
-  </div>
-
-  <div class="sae-item">
-    <div class="sae-text">
-      <h4>SAE 2.02 — Comparaison d’algorithmes</h4>
-      <p>
-        Étude comparative d’algorithmes de tri et de recherche avec visualisation des performances.
-      </p>
-    </div>
-    <div class="sae-media">
-      <img src="images/sae202.png" alt="SAE 202" class="sae-image">
-      <a href="SAE/SAE202.ipynb" target="_blank" class="sae-link">📄 Voir le notebook (IPYNB)</a>
-    </div>
-  </div>
-
-  <div class="sae-item">
-    <div class="sae-text">
-      <h4>SAE 2.03 — Administration système</h4>
-      <p>
-        Configuration d’un serveur Linux pour héberger des services web dynamiques (LAMP).
-      </p>
-    </div>
-    <div class="sae-media">
-      <img src="images/sae203.png" alt="SAE 203" class="sae-image">
-      <a href="SAE/SAE203.pdf" target="_blank" class="sae-link">📄 Voir le livrable (PDF)</a>
-    </div>
-  </div>
-
-  <div class="sae-item">
-    <div class="sae-text">
-      <h4>SAE 2.04 — Visualisation de données</h4>
-      <p>
-        Tableaux de bord avec Python (pandas, matplotlib, seaborn) sur des fichiers CSV.
-      </p>
-    </div>
-    <div class="sae-media">
-      <img src="images/sae204.png" alt="SAE 204" class="sae-image">
-      <a href="SAE/SAE204.pdf" target="_blank" class="sae-link">📄 Voir le livrable (PDF)</a>
-    </div>
-  </div>
-
-  <div class="sae-item">
-    <div class="sae-text">
-      <h4>SAE 2.05 — Recherche d’alternance</h4>
-      <p>
-        Dans le cadre de ma formation, j’ai participé à un projet en équipe visant à préparer 
-        la recherche d’une alternance. Ce projet m’a permis de travailler de manière collaborative 
-        autour d’un objectif commun : mettre en place une stratégie efficace pour trouver une 
-        entreprise d’accueil. Avec mon groupe, nous avons organisé notre travail, réparti les missions,
-        réalisé différents supports (CV, lettre de motivation, journal de bord, affiche, présentation
-        finale…) et suivi nos démarches tout au long du semestre. Ce projet m’a permis de développer
-        mes compétences en organisation,en communication, ainsi qu’en recherche d’opportunités 
-        professionnelles.
-      </p>
-    </div>
-    <div class="sae-media">
-      <img src="images/sae205.png" alt="SAE 205" class="sae-image">
-    </div>
+    <div class="poster-media"><img src="images/sae205.png" alt="ALTERNANCE" loading="lazy"></div>
+    <span class="poster-enter">Entrer →</span>
+  </a>
   </div>
 </main>
 
+
 <footer>
   <div class="footer-content">
-    <img src="images/sorbonne.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo">
-    <p>© 2025 Mohammed Beqqal Azirar</p>
+    <img src="images/sorbonne-light.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo logo-light"><img src="images/sorbonne-dark.png" alt="" aria-hidden="true" class="sorbonne-logo logo-dark">
+    <p>© 2025–2026 Mohammed Beqqal Azirar — Portfolio BUT Informatique S4</p>
   </div>
 </footer>
+
+<script src="app.js"></script>
 </body>
 </html>

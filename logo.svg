@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Mohammed Beqqal Azirar">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22302f"/>
+      <stop offset="1" stop-color="#0d1413"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d06a50"/>
+      <stop offset=".55" stop-color="#b1442b"/>
+      <stop offset="1" stop-color="#d2a64e"/>
+    </linearGradient>
+    <pattern id="weave" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M6.5 1 L12 6.5 L6.5 12 L1 6.5 Z" fill="none" stroke="#d2a64e" stroke-width="1" opacity=".22"/>
+      <circle cx="6.5" cy="6.5" r="1" fill="#d2a64e" opacity=".28"/>
+    </pattern>
+    <clipPath id="r"><rect x="4" y="4" width="92" height="92" rx="24"/></clipPath>
+  </defs>
+
+  <!-- socle + motif berbère -->
+  <rect x="4" y="4" width="92" height="92" rx="24" fill="url(#bg)"/>
+  <g clip-path="url(#r)"><rect x="4" y="4" width="92" height="92" fill="url(#weave)"/></g>
+  <rect x="4" y="4" width="92" height="92" rx="24" fill="none" stroke="url(#ink)" stroke-width="2.6"/>
+
+  <!-- accents circuit (tech) -->
+  <g stroke="#d2a64e" stroke-width="2" stroke-linecap="round" fill="#d2a64e">
+    <circle cx="20" cy="22" r="2.4"/><line x1="20" y1="22" x2="20" y2="34"/>
+    <circle cx="80" cy="78" r="2.4"/><line x1="80" y1="78" x2="80" y2="66"/>
+    <circle cx="80" cy="22" r="2.4" opacity=".55"/>
+    <circle cx="20" cy="78" r="2.4" opacity=".55"/>
+  </g>
+
+  <!-- monogramme MBA -->
+  <text x="50" y="62" text-anchor="middle" font-family="'Arial Black','Archivo',Arial,sans-serif"
+        font-weight="900" font-size="34" letter-spacing="-2.5" fill="url(#ink)">MBA</text>
+  <rect x="33" y="69" width="34" height="3" rx="1.5" fill="url(#ink)"/>
+</svg>

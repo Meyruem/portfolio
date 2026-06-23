@@ -1,50 +1,101 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
+  <script>document.documentElement.setAttribute('data-theme','dark');try{localStorage.setItem('theme','dark');}catch(e){}</script>
   <meta charset="UTF-8">
-  <title>Contact - Portfolio Mohammed</title>
-  <link rel="stylesheet" href="css.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Mohammed Beqqal Azirar</title>
+  <meta name="description" content="Contacter Mohammed Beqqal Azirar — LinkedIn, GitHub, CV. En recherche d'une alternance BUT3 en développement fullstack ou data.">
+  <link rel="stylesheet" href="css.css?v=3">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wdth,wght@0,125,800;0,125,900;1,125,800;1,125,900&family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,0,600;9..144,0,700;9..144,1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <nav>
-    <div class="logo-title">
-      <a href="index.html">
-        <img src="logo.png" alt="Logo" class="logo">
-      </a>
-      <h1>Contact</h1>
-    </div>
-    <ul>
-      <li><a href="presentation.html">Présentation</a></li>
-      <li><a href="projets.html">Projets</a></li>
-      <li><a href="veille.html">Veille</a></li>
-      <li><a href="interview.html">Interview</a></li>
-      <li><a href="objectifs.html">Objectifs</a></li>
+  <header>
+  <nav class="navpill">
+    <a class="brand-logo" href="index.html" aria-label="Accueil — Mohammed Beqqal Azirar">
+      <img class="logo-mark" src="logo.svg" alt="" aria-hidden="true" width="44" height="44">
+      <span class="brand">Mohammed Beqqal Azirar</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="pourquoi-info.html">Pourquoi l'info ?</a></li>
+        <li><a href="projets.html">Projets &amp; SAÉ</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="bilan-competences.html">Bilan</a></li>
+        <li><a href="objectifs.html">Objectifs</a></li>
+        <li><a href="veille.html">Veille</a></li>
     </ul>
+    <a class="nav-cta active" href="contact.html">Me contacter</a>
   </nav>
 </header>
 
 <main>
-  <h2>Mes liens</h2>
-  <div class="contact-icons">
-    <a href="https://github.com/Meyruem" target="_blank">
-      <img src="images/github.png" alt="GitHub" />
+  <h1 data-eyebrow="Contact">Contact</h1>
+  <p class="subtitle">N'hésitez pas à me contacter — pour une alternance, un projet, ou simplement un échange.</p>
+
+  <div class="contact-grid">
+    <a href="https://www.linkedin.com/in/mohammedbeqqal" target="_blank" rel="noopener" class="contact-card">
+      <img src="images/linkedin.png" alt="LinkedIn">
+      <div class="contact-card-title">LinkedIn</div>
+      <div class="contact-card-info">/in/mohammedbeqqal</div>
     </a>
-    <a href="www.linkedin.com/in/mohammedbeqqal" target="_blank">
-      <img src="images/linkedin.png" alt="LinkedIn" />
+
+    <a href="https://github.com/Meyruem" target="_blank" rel="noopener" class="contact-card">
+      <img src="images/github.png" alt="GitHub">
+      <div class="contact-card-title">GitHub</div>
+      <div class="contact-card-info">@Meyruem</div>
     </a>
-    <a href="Mohammed_BEQQAL AZIRAR_CV.pdf" download>
-      <img src="images/cv.png" alt="CV PDF" />
+
+    <a href="Mohammed_BEQQAL AZIRAR_CV.pdf" target="_blank" class="contact-card">
+      <img src="images/cv.png" alt="CV">
+      <div class="contact-card-title">Mon CV</div>
+      <div class="contact-card-info">Télécharger (PDF)</div>
     </a>
+  </div>
+
+  <div class="card" style="margin-top:36px;">
+    <h3>En recherche d'alternance pour la rentrée 2026</h3>
+    <p>
+      Je suis actuellement à la recherche d'une <strong>alternance pour ma BUT3 Informatique</strong>
+      (rentrée septembre 2026), de préférence en <strong>développement fullstack</strong> ou
+      <strong>data</strong>. Je suis ouvert à tous types de structures (startup, PME, ESN, grands
+      groupes) en région parisienne ou en télétravail majoritaire.
+    </p>
+    <p>
+      Pour toute opportunité ou simple échange, le plus rapide est de me contacter via LinkedIn —
+      je réponds généralement sous 48 heures.
+    </p>
+  </div>
+
+  <div class="card card-blue" style="margin-top:24px;">
+    <h3>Interview professionnelle — Mamadou Boye Barry</h3>
+    <p>
+      Dans le cadre de mon parcours BUT, j'ai réalisé une interview de <strong>Mamadou Boye
+      Barry</strong>, ingénieur en informatique. Notre échange a abordé plusieurs sujets clés :
+      la différence entre statut de prestataire et de salarié, l'importance de l'alternance dans
+      la formation tech, le rôle crucial de l'anglais professionnel, et la nécessité d'un
+      apprentissage continu tout au long de la carrière.
+    </p>
+    <p>
+      Cette interview m'a énormément aidé à structurer ma réflexion sur mes propres objectifs
+      professionnels — c'est notamment elle qui m'a confirmé l'intérêt stratégique de l'alternance
+      pour ma BUT3.
+    </p>
+    <p style="margin-top:18px;">
+      <a href="SAE/RAPPORT-INTERVIEW.pdf" target="_blank" class="btn-inline orange">Télécharger le rapport d'interview (PDF)</a>
+    </p>
   </div>
 </main>
 
 <footer>
   <div class="footer-content">
-    <img src="images/sorbonne.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo">
-    <p>© 2025 Mohammed Beqqal Azirar</p>
+    <img src="images/sorbonne-light.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo logo-light"><img src="images/sorbonne-dark.png" alt="" aria-hidden="true" class="sorbonne-logo logo-dark">
+    <p>© 2025–2026 Mohammed Beqqal Azirar — Portfolio BUT Informatique S4</p>
   </div>
 </footer>
 
+<script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0f172a"/>
+    <stop offset="1" stop-color="#1e293b"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#3b82f6"/>
+    <stop offset="1" stop-color="#fb923c"/>
+  </linearGradient>
+</defs>
+<rect width="400" height="240" fill="url(#bg)"/>
+
+<g>
+  <path d="M 50 60 Q 130 60 130 80 Q 130 100 50 100 Z" fill="#3b82f6" opacity="0.7"/>
+  <path d="M 50 110 Q 130 110 130 125 Q 130 140 50 140 Z" fill="#22c55e" opacity="0.7"/>
+  <path d="M 130 70 L 220 80 L 220 130 L 130 130 Z" fill="#3b82f6" opacity="0.5"/>
+  <path d="M 220 80 L 310 80 L 310 110 L 220 110 Z" fill="#fb923c" opacity="0.7"/>
+  <path d="M 220 115 L 310 130 L 310 150 L 220 130 Z" fill="#ef4444" opacity="0.5"/>
+  <rect x="125" y="70" width="8" height="60" fill="#0f172a"/>
+  <rect x="215" y="80" width="8" height="50" fill="#0f172a"/>
+  <rect x="305" y="80" width="8" height="70" fill="#0f172a"/>
+  <text x="40" y="84" text-anchor="end" fill="#cbd5e1" font-family="system-ui" font-size="10">Parcoursup</text>
+  <text x="40" y="128" text-anchor="end" fill="#cbd5e1" font-family="system-ui" font-size="10">Hors PS</text>
+  <text x="140" y="105" fill="#fb923c" font-family="system-ui" font-size="10" font-weight="700">BUT1</text>
+  <text x="230" y="105" fill="#fb923c" font-family="system-ui" font-size="10" font-weight="700">BUT2</text>
+  <text x="320" y="105" fill="#22c55e" font-family="system-ui" font-size="10" font-weight="700">Diplôme</text>
+</g>
+<text x="200" y="220" text-anchor="middle" fill="#e2e8f0" font-family="system-ui" font-size="14" font-weight="600">Mnémosyne · Diagramme Sankey</text>
+
+</svg>

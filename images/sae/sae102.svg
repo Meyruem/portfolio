@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0f172a"/>
+    <stop offset="1" stop-color="#1e293b"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#3b82f6"/>
+    <stop offset="1" stop-color="#fb923c"/>
+  </linearGradient>
+</defs>
+<rect width="400" height="240" fill="url(#bg)"/>
+
+<g stroke="#3b82f6" stroke-width="1.8" fill="none">
+  <circle cx="100" cy="120" r="22" fill="#1e293b" stroke="#3b82f6"/>
+  <circle cx="200" cy="60" r="22" fill="#1e293b" stroke="#fb923c"/>
+  <circle cx="200" cy="180" r="22" fill="#1e293b" stroke="#fb923c"/>
+  <circle cx="300" cy="120" r="22" fill="#1e293b" stroke="#3b82f6"/>
+  <line x1="120" y1="115" x2="180" y2="70"/>
+  <line x1="120" y1="125" x2="180" y2="170"/>
+  <line x1="220" y1="70" x2="280" y2="115"/>
+  <line x1="220" y1="170" x2="280" y2="125"/>
+  <line x1="200" y1="82" x2="200" y2="158"/>
+</g>
+<text x="100" y="125" text-anchor="middle" fill="#3b82f6" font-family="system-ui" font-size="12" font-weight="700">A</text>
+<text x="200" y="65" text-anchor="middle" fill="#fb923c" font-family="system-ui" font-size="12" font-weight="700">B</text>
+<text x="200" y="185" text-anchor="middle" fill="#fb923c" font-family="system-ui" font-size="12" font-weight="700">C</text>
+<text x="300" y="125" text-anchor="middle" fill="#3b82f6" font-family="system-ui" font-size="12" font-weight="700">D</text>
+<text x="200" y="225" text-anchor="middle" fill="#e2e8f0" font-family="system-ui" font-size="13" font-weight="600">Réseau social en Python</text>
+
+</svg>

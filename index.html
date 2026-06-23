@@ -1,58 +1,261 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
+  <script>document.documentElement.setAttribute('data-theme','dark');try{localStorage.setItem('theme','dark');}catch(e){}</script>
   <meta charset="UTF-8">
-  <title>Accueil - Portfolio Mohammed</title>
-  <link rel="stylesheet" href="css.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Beqqal Azirar — Portfolio BUT Informatique</title>
+  <meta name="description" content="Portfolio de Mohammed Beqqal Azirar — Étudiant en BUT2 Informatique à l'IUT de Villetaneuse (Sorbonne Paris Nord). Développeur fullstack & data, stage chez Marchés BTP, projets, SAÉ et bilan de compétences.">
+  <link rel="stylesheet" href="css.css?v=3">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wdth,wght@0,125,800;0,125,900;1,125,800;1,125,900&family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,0,600;9..144,0,700;9..144,1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="app.js" defer></script>
 </head>
-<body>
-  <div id="loading-screen">
-  <div class="loader"></div>
-  </div>
+<body class="home">
+  <div id="loading-screen"><div class="loader"></div></div>
 
-  
   <header>
-    <nav>
-      <div class="logo-title">
-        <a href="index.html">
-          <img src="logo.png" alt="Logo" class="logo">
-        </a>
-        <h1>Mohammed Beqqal Azirar</h1>
-      </div>
-      <ul>
+  <nav class="navpill">
+    <a class="brand-logo" href="index.html" aria-label="Accueil — Mohammed Beqqal Azirar">
+      <img class="logo-mark" src="logo.svg" alt="" aria-hidden="true" width="44" height="44">
+      <span class="brand">Mohammed Beqqal Azirar</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
         <li><a href="presentation.html">Présentation</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="veille.html">Veille</a></li>
-        <li><a href="interview.html">Interview</a></li>
+        <li><a href="pourquoi-info.html">Pourquoi l'info ?</a></li>
+        <li><a href="projets.html">Projets &amp; SAÉ</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="bilan-competences.html">Bilan</a></li>
         <li><a href="objectifs.html">Objectifs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <li><a href="veille.html">Veille</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Me contacter</a>
+  </nav>
+</header>
 
-  <section class="hero">
-    <h2>Bienvenue sur mon portfolio</h2>
-    <p class="typing">Étudiant en BUT Informatique — Passionné par le développement, l’IA et la Cybersécurité.</p>
-    
-    <div class="photo-interview">
-    <img src="images/photo.png" alt="Photo Interview" />
+  <main>
+    <!-- ═══════════════════════ HERO 3D ═══════════════════════ -->
+    <section class="hero3d" id="hero">
+      <div class="hero3d-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+      </div>
+
+      <div class="hero3d-inner">
+        <div class="hero3d-copy">
+          <span class="hero-eyebrow">Portfolio · BUT Informatique · S4</span>
+          <h1 class="hero-name">
+            <span>Mohammed</span>
+            <span class="accent">Beqqal Azirar</span>
+          </h1>
+          <p class="hero-role">Étudiant BUT2 · Développeur fullstack &amp; orienté data</p>
+          <p class="hero-lead">
+            IUT de Villetaneuse — Université Sorbonne Paris Nord. J'aime comprendre comment les choses
+            fonctionnent en arrière-plan et transformer un problème concret en solution propre. Stage de
+            8 semaines chez <em>Marchés BTP</em>.
+          </p>
+          <div class="hero-cta">
+            <a href="projets.html" class="btn btn-primary">Voir mes projets →</a>
+            <a href="presentation.html" class="btn btn-secondary">Qui je suis</a>
+          </div>
+          <ul class="hero-meta">
+            <li><span class="k">8</span><span class="v">Semaines de stage</span></li>
+            <li><span class="k">77</span><span class="v">Routes API documentées</span></li>
+            <li><span class="k">10</span><span class="v">SAÉ menées</span></li>
+          </ul>
+        </div>
+
+        <div class="hero3d-visual">
+          <div class="hero-photo-stack">
+            <span class="hero-ghost" aria-hidden="true">MBA</span>
+            <span class="photo-halo" aria-hidden="true"></span>
+            <span class="photo-ring" aria-hidden="true"></span>
+            <div class="photo-frame">
+              <img src="images/photo.png" alt="Portrait de Mohammed Beqqal Azirar">
+            </div>
+            <span class="float-chip chip-1"><span class="dot"></span>React</span>
+            <span class="float-chip chip-2"><span class="dot"></span>PostgreSQL</span>
+            <span class="float-chip chip-3"><span class="dot"></span>Python · Data</span>
+            <span class="float-chip chip-4"><span class="dot"></span>Node.js</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero-scrollcue" href="#enbref" aria-label="Faire défiler">
+        <span class="mouse"></span>
+        <span>Défiler</span>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════ EN BREF ═══════════════════════ -->
+    <section class="home-section" id="enbref">
+      <div class="sec-head" data-reveal>
+        <div>
+          <div class="sec-eyebrow"><span class="idx">01</span> En bref</div>
+          <h2 class="sec-title">Un parcours qui se lit en un coup d'œil</h2>
+        </div>
+      </div>
+      <div class="highlights" data-stagger>
+        <div class="highlight-card">
+          <h3>Formation</h3>
+          <p>BUT Informatique<br>IUT de Villetaneuse<br>Sorbonne Paris Nord</p>
+        </div>
+        <div class="highlight-card">
+          <h3>Stage BUT2</h3>
+          <p>8 semaines chez <strong>Marchés BTP</strong><br>Développement fullstack React / Node.js</p>
+        </div>
+        <div class="highlight-card">
+          <h3>Projet phare</h3>
+          <p><strong>Mnémosyne</strong> — plateforme web de suivi des cohortes étudiantes (S3 + S4)</p>
+        </div>
+        <div class="highlight-card">
+          <h3>Objectif</h3>
+          <p>Alternance en BUT3, puis spécialisation <strong>Data / Fullstack</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ À PROPOS (teaser) ═══════════════════════ -->
+    <section class="home-section" id="apropos">
+      <div class="sec-head">
+        <div data-reveal>
+          <div class="sec-eyebrow"><span class="idx">02</span> À propos</div>
+          <h2 class="sec-title">Comprendre avant de coder</h2>
+        </div>
+        <a href="presentation.html" class="sec-link" data-reveal="right">Présentation complète →</a>
+      </div>
+      <div class="trame" data-stagger>
+        <div class="trame-item">
+          <strong>Je suis…</strong>
+          étudiant en deuxième année de BUT Informatique à l'IUT de Villetaneuse, Université Sorbonne Paris Nord.
+          Je viens de terminer un stage de huit semaines chez <em>Marchés BTP</em>, une startup du numérique
+          incubée à l'IMT Business School, où j'ai contribué au développement d'une plateforme web fullstack.
+        </div>
+        <div class="trame-item orange">
+          <strong>Je souhaite devenir…</strong>
+          <em>Data Analyst</em> ou <em>développeur fullstack</em>, avec une appétence forte pour la data et
+          l'analyse. Je veux exercer un métier où la donnée structurée éclaire la décision — dans une
+          entreprise tech, une startup ou un secteur à impact (santé, éducation, environnement).
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ PROJETS PHARES ═══════════════════════ -->
+    <section class="home-section" id="projets">
+      <div class="sec-head">
+        <div data-reveal>
+          <div class="sec-eyebrow"><span class="idx">03</span> Travaux</div>
+          <h2 class="sec-title">Mes projets &amp; SAÉ, présentés comme une collection</h2>
+        </div>
+        <a href="projets.html" class="sec-link" data-reveal="right">Toutes les SAÉ →</a>
+      </div>
+
+      <div class="showcase" data-stagger>
+        <a class="poster poster-text" href="projets/mnemosyne.html">
+          <div class="poster-head">
+            <div class="poster-kicker">Projet phare · S3 + S4</div>
+            <div class="poster-title">MNÉMOSYNE</div>
+            <div class="poster-sub">Suivi des cohortes · API SCODOC</div>
+          </div>
+          <span class="poster-enter">Entrer →</span>
+        </a>
+        <a class="poster poster-text" href="stage.html">
+          <div class="poster-head">
+            <div class="poster-kicker">Stage BUT2 · 8 semaines</div>
+            <div class="poster-title">MARCHÉS BTP</div>
+            <div class="poster-sub">Plateforme web · Architecture MVC</div>
+          </div>
+          <span class="poster-enter">Entrer →</span>
+        </a>
+        <a class="poster" href="projets/sae104.html">
+          <div class="poster-head">
+            <div class="poster-kicker">SAÉ 1.04 · Marquante</div>
+            <div class="poster-title">SQL·BDD</div>
+            <div class="poster-sub">Climate Disasters · PostgreSQL</div>
+          </div>
+          <div class="poster-media"><img src="images/sae104.png" alt="SAÉ 1.04 — Bases de données" loading="lazy"></div>
+          <span class="poster-enter">Entrer →</span>
+        </a>
+        <a class="poster" href="projets/sae204.html">
+          <div class="poster-head">
+            <div class="poster-kicker">SAÉ 2.04</div>
+            <div class="poster-title">DATA·VIZ</div>
+            <div class="poster-sub">Visualisation Python · pandas</div>
+          </div>
+          <div class="poster-media"><img src="images/sae204.png" alt="SAÉ 2.04 — Visualisation de données" loading="lazy"></div>
+          <span class="poster-enter">Entrer →</span>
+        </a>
+      </div>
+      <p class="showcase-hint">✦ &nbsp;Cliquez sur un panneau pour entrer dans le détail</p>
+    </section>
+
+    <!-- ═══════════════════════ COMPÉTENCES (marquee) ═══════════════════════ -->
+    <section class="home-section" id="stack">
+      <div class="sec-head" data-reveal>
+        <div>
+          <div class="sec-eyebrow"><span class="idx">04</span> Boîte à outils</div>
+          <h2 class="sec-title">Ce que je manipule au quotidien</h2>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>React</span><span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>Prisma</span><span>Java</span><span>Linux</span><span>Git</span><span>SQL</span><span>pandas</span><span>Express</span><span>Swagger</span>
+          <span>React</span><span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>Prisma</span><span>Java</span><span>Linux</span><span>Git</span><span>SQL</span><span>pandas</span><span>Express</span><span>Swagger</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ PARCOURS ═══════════════════════ -->
+    <section class="home-section" id="parcours">
+      <div class="sec-head" data-reveal>
+        <div>
+          <div class="sec-eyebrow"><span class="idx">05</span> Trajectoire</div>
+          <h2 class="sec-title">Du premier terminal Linux au pilotage d'un projet client</h2>
+        </div>
+      </div>
+      <div class="path" data-stagger>
+        <div class="path-step">
+          <span class="yr">2024 — 2025 · BUT1</span>
+          <h4>Les fondations</h4>
+          <p>Découverte du SQL, de la POO, de Linux et du recueil de besoins. La SAÉ 1.04 me fait basculer vers la data.</p>
+        </div>
+        <div class="path-step">
+          <span class="yr">2025 — 2026 · BUT2</span>
+          <h4>La mise en projet</h4>
+          <p>Mnémosyne, l'algorithmique, l'admin LAMP et la visualisation de données. Je passe de l'exercice au projet.</p>
+        </div>
+        <div class="path-step">
+          <span class="yr">Janv. — Mars 2026 · Stage</span>
+          <h4>Le révélateur</h4>
+          <p>8 semaines chez Marchés BTP : architecture MVC, 77 routes documentées, autonomie en entreprise.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CTA ═══════════════════════ -->
+    <section class="home-section" id="cta">
+      <div class="cta-band" data-reveal>
+        <div>
+          <h3>Envie d'échanger ou de me proposer une alternance ?</h3>
+          <p>Je cherche une alternance pour ma BUT3 en développement fullstack ou data.</p>
+        </div>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-primary">Me contacter →</a>
+          <a href="SAE/RAPPORT_DE_STAGE_Mohammed-BEQQAL-AZIRAR_SATURNE.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Rapport de stage</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/sorbonne-light.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo logo-light"><img src="images/sorbonne-dark.png" alt="" aria-hidden="true" class="sorbonne-logo logo-dark">
+      <p>© 2025–2026 Mohammed Beqqal Azirar — Portfolio BUT Informatique S4</p>
     </div>
-  </section>
-
-<footer>
-  <div class="footer-content">
-    <img src="images/sorbonne.png" alt="Université Sorbonne Paris Nord" class="sorbonne-logo">
-    <p>© 2025 Mohammed Beqqal Azirar</p>
-  </div>
-</footer>
-
-<script>
-  window.addEventListener('load', () => {
-    const loadingScreen = document.getElementById('loading-screen');
-    loadingScreen.style.opacity = '0';
-    setTimeout(() => loadingScreen.style.display = 'none', 500);
-  });
-</script>
-
+  </footer>
 </body>
 </html>

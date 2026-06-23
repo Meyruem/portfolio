@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0f172a"/>
+    <stop offset="1" stop-color="#1e293b"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#3b82f6"/>
+    <stop offset="1" stop-color="#fb923c"/>
+  </linearGradient>
+</defs>
+<rect width="400" height="240" fill="url(#bg)"/>
+
+<g>
+  <rect x="60" y="140" width="40" height="50" fill="#3b82f6" opacity="0.7"/>
+  <rect x="110" y="100" width="40" height="90" fill="#fb923c" opacity="0.8"/>
+  <rect x="160" y="80" width="40" height="110" fill="#3b82f6" opacity="0.7"/>
+  <rect x="210" y="120" width="40" height="70" fill="#fb923c" opacity="0.8"/>
+  <rect x="260" y="60" width="40" height="130" fill="#3b82f6" opacity="0.7"/>
+  <rect x="310" y="95" width="30" height="95" fill="#fb923c" opacity="0.8"/>
+  <line x1="55" y1="190" x2="345" y2="190" stroke="#64748b"/>
+  <path d="M 80 160 L 130 130 L 180 110 L 230 145 L 280 90 L 325 120" stroke="#22c55e" stroke-width="2" fill="none"/>
+  <circle cx="80" cy="160" r="3" fill="#22c55e"/>
+  <circle cx="130" cy="130" r="3" fill="#22c55e"/>
+  <circle cx="180" cy="110" r="3" fill="#22c55e"/>
+  <circle cx="230" cy="145" r="3" fill="#22c55e"/>
+  <circle cx="280" cy="90" r="3" fill="#22c55e"/>
+  <circle cx="325" cy="120" r="3" fill="#22c55e"/>
+</g>
+<text x="200" y="220" text-anchor="middle" fill="#e2e8f0" font-family="system-ui" font-size="13" font-weight="600">pandas · matplotlib</text>
+
+</svg>
